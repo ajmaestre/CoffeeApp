@@ -1,0 +1,10 @@
+
+app-nav{
+    position: fixed;
+}
+
+.main{
+    display: grid;
+    grid-template-rows: 2rem auto;
+    row-gap: 2rem;
+}

@@ -1,0 +1,104 @@
+
+.contactos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-no-select);
+}
+
+.sigueme{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    font-weight: normal;
+    margin: .3rem;
+}
+
+.contact{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.icon-text{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+    font-weight: normal;
+}
+
+.icon-text img{
+    width: 1rem;
+}
+
+.icons{
+    display: grid;
+    grid-template-columns: repeat(4, 4rem);
+}
+
+.icon img{
+    width: 1.5rem;
+}
+
+.aside{
+    width: 20rem;
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+}
+
+.sect{
+    background-color: white;
+    margin: 20px 10px;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    padding: 1rem 2rem;
+}
+
+section div{
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 15px;
+    padding: 0;
+}
+
+a{
+    background-color: white;
+    text-decoration: none;
+}
+
+.p{
+    background-color: white;
+    color: #838383;
+    margin: 10px 0 10px 0;
+    flex: 3;
+}
+
+.icon{
+    width: 20px;
+    height: 20px;
+    margin: 0 20px 0 8px;
+    background-color: white;
+}

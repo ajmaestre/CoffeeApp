@@ -1,0 +1,165 @@
+<article class="article right" data-aos="fade-down-right" >
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Evaluación del modelo</p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                El primer modelo, el de regresión lineal, 
+                tiene un valor de un 86,04% de confianza predictiva, 
+                este algoritmo presenta un rendimiento menor que el modelo de regresión logística, 
+                ya que con éste último el valor de la confianza predictiva es tan solo de 90.19%, 
+                por lo que en términos de precisión el modelo de 
+                regresión logística parece ser una mejor opción, 
+                claro que hay que tener en cuenta que este solo predice 
+                una categoría o clase mientras que el modelo de regresión lineal 
+                predice el valor exacto de las toneladas de producción de café.
+            
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 9. Precisión</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Modelo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title">Regresión lineal</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title">Regresión logística</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Precisión</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">86.04%</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">90.19%</p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                Para el segundo modelo, después de ser evaluado se obtuvo la siguiente matriz de confusión:
+            
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right" data-aos="fade-down-right" >
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 10. Matriz de confusión</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title cn"><br></p>
+                    </div>
+                    <div id="bn1">
+                        <p class="col-title cn"><br></p>
+                    </div>
+                    <div id="bn2">
+                        <p class="col-title cn">Predicción</p>
+                    </div>
+                    <div id="bn3">
+                        <p class="col-title cn"><br></p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="bn4">
+                        <p class="col-title cn"><br></p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title cn"><br></p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title cn">Positivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title cn">Negativo</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="bn5">
+                        <p class="col-title cn">Actual</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name cn">Positivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name cn">1063</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name cn">64</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="bn6">
+                        <p class="col-title cn"><br></p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name cn">Negativo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name cn">88</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name cn">589</p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                De los 1804 datos de prueba, el modelo arrojó 1063 verdaderos positivos, 
+                es decir, que el modelo predijo correctamente a 122 producciones 
+                de café por sobre el promedio. También se obtuvieron 589 verdaderos negativos, 
+                lo que nos dice que el modelo predijo correctamente a 589 producciones de café 
+                por debajo del promedio. Por otro lado, el modelo arrojó 88 falsos positivos, 
+                es decir, predijo erróneamente a 88 producciones de café que no estaban por 
+                sobre el promedio. También se obtuvo 64 falsos negativos, lo que significa 
+                que el modelo erró al predecir a 64 producciones de café que estaban 
+                por encima del promedio.
+            
+            </p>
+        </div>
+    </section>
+
+</article>

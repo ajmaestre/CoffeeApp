@@ -1,0 +1,214 @@
+
+<article class="article right" data-aos="fade-down-right" >
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Generación de los modelos</p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                En esta etapa se procederá a ejecutar los modelos elegidos 
+                sobre los datos de entrenamiento. Luego se describirán los 
+                ajustes de parámetros de los modelos que se han elegido, 
+                así como la salida de dicho modelo y su descripción.
+            
+            </p>
+        </div>
+    </section>
+
+    <section class="sect three">
+        <div>
+            <p class="p" id="p-o-r">Métricas</p>
+        </div>
+        <div class="one three">
+            <div class="ot">
+                <div class="div-img">
+                    <div class="st">
+                        <img class="icon middle" src="../../../assets/images/extract.png" alt="Not found">
+                    </div>
+                </div>
+                <p class="p title" id="title">Ejecución de los modelos</p>
+                <p class="p text">
+                    Se ejecutarán los dos modelos, uno de regresión lineal y 
+                    otro de regresión logística, con el objetivo de predecir 
+                    la producción de cultivos de café, sobre un conjunto de 
+                    datos de entrenamiento del 75%, con lo cual se deja el 25% 
+                    de datos para el conjunto de prueba. 
+                </p>
+            </div>
+            <div class="ot">
+                <div class="div-img">
+                    <div class="st">
+                        <img class="icon middle" src="../../../assets/images/load.png" alt="Not found">
+                    </div>
+                </div>
+                <p class="p title" id="title">Descripción de los modelos</p>
+                <p class="p text">
+                    A continuación, vamos a describir el resultado de la 
+                    ejecución de cada uno de los modelos para cada objetivo, 
+                    estos resultados se estudiarán más a fondo en la etapa de evaluación.
+                </p>
+            </div>
+            
+        </div>
+        
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Modelo de regresión lineal</p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r"></p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                Como se puede observar en la tabla el modelo obtuvo una 
+                taza de precisión del 86%, es decir, un 86% de los datos 
+                fueron predichos correctamente, una tasa que podríamos 
+                considerar relativamente buena. En cuanto al cuadrado 
+                medio del error se obtuvo un 315.21, es decir, 
+                la diferencia entre el valor predicho y el valor real. 
+                Esta medición indica que hay una diferencia entre las 
+                toneladas de producción de café predichas por el modelo y las toneladas reales.
+            
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 7. Coeficientes</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Coeficientes</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title">Valores</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Precisión del modelo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">86.04%</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">RMSE</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">315.21</p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Modelo de regresión logística</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                En la tabla siguiente podemos ver que el modelo tiene una tasa 
+                del 91.57% de predicciones correctas, lo que se podría considerar 
+                un rendimiento bastante bueno por parte del modelo. 
+                En cuanto a la precisión, podemos observar en la tabla 
+                que el modelo tiene un desempeño del 90.19% en cuanto 
+                a sus predicciones positivas, es decir, aquellas producciones 
+                de café consideradas altas o por sobre la media. Para la sensibilidad, 
+                obtenemos que el modelo predice correctamente con una tasa del 87% 
+                a aquellas producciones de café que son altas. En cuanto a la especificidad, 
+                el modelo predice correctamente con una tasa del 91.57% a aquellas 
+                producciones de café que están por debajo de la media.
+            
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 8. Métricas</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Métrica</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title">Resultado</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Exactitud</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">91.57%</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Precisión</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">90.19%</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Sensibilidad</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">87%</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Especificidad</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">91.57%</p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+</article>

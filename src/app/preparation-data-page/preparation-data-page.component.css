@@ -1,0 +1,15 @@
+
+app-links-pdp{
+    position: fixed;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 20rem auto;
+    column-gap: .2rem;
+    margin: 0 6rem;
+}
+
+hr{
+    margin: 2rem 4rem 2rem 4rem;
+}

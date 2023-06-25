@@ -1,0 +1,274 @@
+
+.sect{
+    background-color: white;
+    margin: 10px;
+    padding: 2rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    font-size: .8rem;
+}
+
+section div{
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5px 15px 5px 15px;;
+    padding: 0;
+}
+
+a{
+    background-color: white;
+    text-decoration: none;
+}
+
+.p{
+    background-color: white;
+    color: #838383;
+    margin: 10px 0 10px 0;
+    flex: 3;
+    font-family: var(--font-family-text);
+}
+
+article section{
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 0 15px 0 15px;
+}
+
+article .one div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-one-r{
+    margin: 0;
+    flex: 30;
+    padding: 0.5rem 0;
+    font-size: .9rem;
+}
+
+.sect.two{
+    padding: 1rem;
+}
+
+#two-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0 35px;
+}
+
+.middle{
+    margin-right: 2rem;
+    width: 2rem;
+}
+
+.three{
+    flex: 14;
+}
+
+#p-four-r{
+    padding: 0 40px 0 20px;
+}
+
+.three div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-o-r{
+    padding-left: 3px;
+    margin: 0;
+    flex: 30;
+}
+
+.ot{
+    width: 40%;
+    height: 18rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.ot:hover{
+    transform: scale(1.1);
+}
+
+.ot .div-img{
+    width: 40%;
+    height: 20%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.st{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 40%;
+}
+
+.st img{
+    width: 50%;
+    margin: 1rem;
+}
+
+.ot p{
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#title{
+    height: 2rem;
+}
+
+.text{
+    height: 7rem;
+}
+
+.sect.three{
+    padding: 1rem;
+}
+
+.one.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+#mising-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    padding: 2rem;
+    margin: 0;
+}
+
+.col-name{
+    width: 10rem;
+    text-align: center;
+    color: #838383;
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+    margin: 1rem;
+}
+
+.col-title{
+    width: 10rem;
+    text-align: center;
+    color: var(--bg-footer);
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.cn{
+    width: 5rem;
+}
+
+#bn1{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-left: 1px solid;
+    border-right: 1px solid white;
+}
+
+#bn2{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid white;
+    border-left: 1px solid white;
+}
+
+#bn3{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid white;
+}
+
+#bn4{
+    border-top: 1px solid;
+    border-bottom: 1px solid white;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+#bn5{
+    border-top: 1px solid white;
+    border-bottom: 1px solid white;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+#bn6{
+    border-top: 1px solid white;
+    border-bottom: 1px solid;
+    border-right: 1px solid;
+    border-left: 1px solid;
+}
+
+.title-col{
+    color: var(--bg-footer);
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+}
+
+#legend{
+    margin-top: 2rem;
+}
+
+#sect-table{
+    padding: 0;
+}
+
+#sect-table div{
+    margin: 0;
+    padding: 0;
+}
+
+.sect.two{
+    padding: 1rem;
+}
+
+#two-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0 35px;
+}
+
+hr{
+    margin: 2rem 4rem 2rem 4rem;
+}

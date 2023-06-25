@@ -1,0 +1,392 @@
+
+<article class="article right">
+
+    <section class="sect one" data-aos="fade-down-right" >
+        <div>
+            <p class="p" id="p-one-r">Exploración de los datos</p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Después de la realización de la descripción de los datos, 
+                procederemos a realizar la respectiva exploración de los mismos. 
+                Dentro de esta exploración aplicaremos pruebas estadísticas básicas 
+                que nos permitan descubrir propiedades en los datos que difícilmente 
+                se verían a simple vista, y crear gráficos de frecuencia, de línea y 
+                de distribución de los datos. 
+                Este informe nos permitirá esencialmente determinar qué tan consistentes 
+                y completos se encuentran los datos recolectados.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Correlación entre los atributos del conjunto de datos</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Para la realización del análisis o exploración de los atributos que 
+                conforman el conjunto de datos, comenzamos analizando la correlación 
+                que existe entre los distintos atributos numéricos del conjunto de 
+                datos por medio de los coeficientes de Pearson, Spearman y Kendall. 
+                Esto nos permitirá determinar el grado de asociación entre los atributos 
+                del conjunto de datos, para luego seleccionar aquellos que presenten una 
+                mayor asociación o correlación.
+
+                Para los coeficientes de Spearman y Kendall obtuvimos cierta similitud en los valores. 
+                Estos valores muestran una fuerte correlación entre los atributos Área Cosechada y 
+                Área Sembrada, lo que posiblemente indica que entre mayor sea la superficie de 
+                cultivo de café sembrado mayor será la superficie que se cosechará. 
+                Esta fuerte correlación entre los atributos Área Cosechada y Área Sembrada nos 
+                permite tenerlos en cuenta para la posterior selección de atributos en la fase 
+                de preparación de los datos.
+
+                Los valores obtenidos por los coeficientes de Spearman y Kendall también 
+                muestran una fuerte correlación entre el atributo Producción y los dos 
+                anteriores (Área Cosechada y Área Sembrada), lo que también indica que 
+                la producción de café en un cultivo depende del área sembrada, es decir, 
+                entre mayor sea el área sembrada mayor será la producción de café. 
+                El atributo Producción al indicar una fuerte correlación con los dos 
+                atributos anteriores (Área Cosechada y Área Sembrada), 
+                también se convierte en un candidato para ser seleccionado en etapas posteriores.
+                
+                También podemos notar una correlación débil entre el atributo Rendimiento 
+                y el atributo Producción; esta correlación débil también se presenta entre 
+                el atributo Rendimiento y, los atributos Área Cosechada y Área Sembrada. 
+                También podemos mencionar una correlación muy débil entre el atributo Año y 
+                el atributo Rendimiento. 
+
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Esta correlación podría indicar que el rendimiento de un cultivo 
+                de café es dependiente en cierta medida de la producción, el área cosechada, 
+                el área sembrada, como también el año de la siembra. 
+                También podemos suponer que la razón de una correlación tan débil entre 
+                el Rendimiento con los otros atributos es debido a la presencia de datos 
+                atípicos o también por datos faltantes.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Esta correlación entre las variables también la podemos observar más 
+                claramente en el diagrama de correlación de Pearson en el boton de abajo. 
+                En este gráfico, al igual que con las matrices de Kendall y Spearman 
+                (aunque con una pequeña variación en los resultados), 
+                podemos ver que existe una correlación lineal fuerte entre el área cosechada y 
+                el área sembrada. Esta fuerte correlación, como ya mencionamos, 
+                nos dice que a mayor área sembrada mayor será el área cosechada. 
+                
+                Por otro lado, también observamos una relación fuerte entre la producción, 
+                el área cosechada y el área sembrada, indicando esto que la producción es 
+                linealmente dependiente del área sembrada, es decir, a mayor área sembrada 
+                mayor será la producción. 
+                
+                Como también podemos observar en la matriz de correlación de Pearson, 
+                existe una correlación débil entre la producción y el rendimiento, 
+                indicando nuevamente una posible dependencia entre los dos atributos. 
+                Como ya mencionamos, la correlación débil entre estos dos atributos podría 
+                estar indicándonos la existencia de datos faltantes en el conjunto de datos, 
+                como también la presencia de datos atípicos.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect three" data-aos="fade-down-right" >
+        <div class="one three">
+            <div class="ot" (click)="open_modal(modal_spearman)">
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">Matriz de correlación de Spearman</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ot">
+                <div class="div-img" (click)="open_modal(modal_kendall)">
+                    <div class="st">
+                        <p class="p">Matriz de correlación de Kendall </p>
+                    </div>
+                </div>
+            </div>
+            <div class="ot">
+                <div class="div-img" (click)="open_modal(modal_pearson)">
+                    <div class="st">
+                        <p class="p">Matriz de correlación de Pearson </p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <app-modal-img></app-modal-img>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Matriz de dispersión</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Para continuar con el análisis del conjunto de datos, 
+                presentaremos una matriz de dispersión de las variables 
+                numéricas que conforman el conjunto de datos para visualizar 
+                la correlación entre las variables de una forma mucho más visual. 
+                En el gráfico 5 a simple vista podemos identificar que existe 
+                una correlación lineal entre el área cosechada y el área sembrada, 
+                como también entre la producción, el área sembrada y el área cosechada. 
+                Podemos deducir de una forma superficial que a medida que aumenta el área 
+                sembrada también aumentará el área cosechada. Este efecto es igual para 
+                la producción, es decir, la producción aumentará a medida que el 
+                área cosechada y el área sembrada aumente. Esta fuerte correlación 
+                lineal entre los atributos producción, el área sembrada y el área cosechada, 
+                nos permite identificarlos como candidatos para una futura selección de 
+                atributos en la etapa de preparación de los datos.
+                Para el atributo Rendimiento la relación existente con los demás 
+                atributos es difícil de identificar a simple vista, pero si observamos 
+                con detenimiento podemos notar cierta relación lineal con los atributos 
+                producción, área cosechada y área sembrada.  
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_5.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 5: matriz de dispersión 
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Relación entre el área cosechada y el área sembrada</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Podemos ver en la gráfica 13 como se presenta una correlación 
+                lineal muy fuerte entre el área cosechada y el área sembrada, 
+                indicando esto que a medida que una aumenta la otra también lo hace. 
+                En la gráfica 6, por medio de la recta de regresión, podemos observar 
+                con una mayor claridad el nivel de correlación que existe entre los dos atributos, 
+                mostrando la dependencia que posee el área cosechada con el área sembrada. 
+                También podemos notar que existen ciertos datos que se encuentran mucho más 
+                dispersos respecto al resto. Estos datos atípicos, que podrían deberse a 
+                errores a la hora de registrarlos o también podrían ser datos reales con 
+                comportamientos atípicos, deben ser identificados y debidamente tratados 
+                en la fase de preparación de los datos.  
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_6.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 6: dispersión entre el área sembrada y el área cosechada 
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Relación entre el área sembrada y la producción</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                En la gráfica 7 podemos ver con mayor claridad la fuerte 
+                correlación existente entre el atributo área sembrada y el atributo producción, 
+                también podemos observar que esta relación lineal es mucho más evidente 
+                cuando la cantidad de toneladas para la producción es menor en comparación 
+                con las hectáreas del área sembrada. La grafica también nos indica que a 
+                medida que la cantidad de hectáreas y toneladas aumenta la dispersión de 
+                los datos crece, esto podría deberse a la presencia de datos faltantes o 
+                atípicos en el conjunto de datos. En el gráfico 16 podemos notar con mayor precisión, 
+                gracias a la recta de regresión, como debería ser el comportamiento esperado de los datos. 
+                Esto también nos permite identificar con mejor claridad aquellos datos atípicos 
+                que se desvían del comportamiento normal.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_7.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 7: dispersión entre el área sembrada y la producción
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Relación entre el rendimiento y la producción</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                En el gráfico 8 también notamos una correlación demasiado 
+                débil pero presente entre los atributos rendimiento y producción, 
+                es decir, que a medida que se desarrolla una mayor producción de 
+                cultivo de café habrá o se reportará un rendimiento mayor. 
+                También observamos que, con el aumento de la cantidad de toneladas de producción, 
+                los datos se dispersan de una manera más marcada. Esta debilidad en la 
+                correlación de las variables podría indicar la presencia de datos nulos 
+                o atípicos en el conjunto de datos. En la gráfica 18 podemos ver como 
+                la recta de regresión traza el comportamiento esperado de los datos, 
+                esto nos ayuda a identificar aquellos datos atípicos que más adelante 
+                deberán ser tratados en la fase de preparación de los datos.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_8.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 8: dispersión entre el rendimiento y la producción
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Relación entre el rendimiento y el área sembrada</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                En el gráfico 9 también notamos una correlación demasiado débil 
+                pero presente entre los atributos rendimiento y área sembrada, 
+                es decir, a una mayor área sembrada de cultivo de café habrá o 
+                se reportará un rendimiento mayor. Esta debilidad en la correlación 
+                de las variables podría indicar la presencia de datos nulos o 
+                atípicos en el conjunto de datos. En la gráfica 20 podemos ver 
+                como la recta de regresión traza el comportamiento esperado de los datos, 
+                esto nos ayuda a identificar aquellos datos atípicos que más adelante 
+                deberán ser tratados en la fase de preparación de los datos.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_9.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 9: dispersión entre el rendimiento y el área sembrada
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Porcentajes de rendimiento y producción por departamento</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                En la gráfica 10 podemos observar el porcentaje de producción de 
+                los cultivos de café por cada departamento. El grafico muestra 
+                como el departamento del Huila conforma un 15.8% del rendimiento 
+                total entre los años 2006 a 2018, seguido por el departamento de 
+                Antioquia con un 15.2% del rendimiento. Por otro lado, en el gráfico 11, 
+                que representa el porcentaje de rendimiento por cada departamento, 
+                podemos observar como el departamento de Antioquia esta vez toma el 
+                primer lugar con un 16.3% de la producción total entre los años 2006 a 2018, 
+                seguido por el departamento de Cundinamarca con un 11.4%. 
+                También vemos como esta vez el Huila bajo hasta el cuarto puesto con un 7.3%.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" id="percentaje" data-aos="fade-down-right" >
+        <div class="div-img">
+            <div id="two-r">
+                <img class="icon fig-4 img-percentaje" src="../../../assets/images/grafica_10.png" alt="Not found">
+            </div>
+            <div class="r">
+                <p class="p four r" id="p-fig-4">
+                    Gráfico 10: Porcentaje de producción de cultivos de café por departamento
+                </p>
+            </div>
+        </div>
+        <div class="div-img">
+            <div id="two-r">
+                <img class="icon fig-4 img-percentaje" src="../../../assets/images/grafica_11.png" alt="Not found">
+            </div>
+            <div class="r">
+                <p class="p four r" id="p-fig-4">
+                    Gráfico 11: Porcentaje de rendimiento de cultivos de café por departamento
+                </p>
+            </div>
+        </div>
+    </section>
+
+</article>

@@ -1,0 +1,28 @@
+
+<div class="page" *ngIf="modalService.open_modal">
+
+    <aside class="aside left">
+        <section class="sect two">
+            <div id="modal_close">
+                <a class="modal_close" (click)="modalService.open_modal=false">X</a>
+            </div>
+            <div id="two-r">
+                <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+                <p class="p three r">{{modalService.title_modal}}</p>
+            </div>
+            <div class="r">
+                <ul>
+                    <li *ngFor="let content of modalService.content_modal">
+                        <p class="p four r" id="p-four-r">
+                            {{content}}
+                        </p>
+                    </li>
+                </ul>
+            </div>
+            <div class="r" id="r-img">
+                <img src="../../assets/images/{{modalService.url_img}}" alt="">
+            </div>
+        </section>
+    </aside>
+    
+</div>

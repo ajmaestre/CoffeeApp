@@ -1,0 +1,266 @@
+
+<article class="article right">
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Formato de los datos</p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r"></p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                Como ya se explicó anteriormente, para la construcción del modelo 
+                predictivo se utilizará un algoritmo de regresión logística 
+                por lo tanto es necesario categorizar el atributo Producción, 
+                ya que es nuestro atributo objetivo. Teniendo en cuenta que el 
+                modelo consiste en predecir la producción de los cultivos de café a nivel nacional, 
+                se ha optado por escoger dos clases que representen los valores de esta variable: 
+                alto y bajo. Estos rangos de valores se calcularon con respecto a la 
+                media aritmética de los valores del atributo Producción, 
+                cualquier valor por sobre la media se consideró 'Alto' (1) y 
+                cualquier valor que se encontraba por debajo de la media 'Bajo' (0). 
+                En la siguiente tabla podemos observar el rango de parámetros que 
+                se establecieron para la categorización del atributo Producción:
+            
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 4. Rango de valores para el atributo producción</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Rango de valores</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title">Categoría</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">X &lt; Media</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">Bajo(0)</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">X &gt; Media</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">Alto(1)</p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Distribución de los datos para el atributo producción</p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r"></p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                En la gráfica 20 podemos observar cómo quedó la nueva distribución 
+                para el atributo Producción después de la categorización. 
+                En la gráfica vemos que se reportan 4480 instancias de cultivos de 
+                café con una producción baja y 2735 instancias con una producción alta, 
+                es decir, que dentro del conjunto de datos existen más valores para la 
+                producción por debajo de la media que por sobre la media.
+                
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_20.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 20: Distribución para el atributo Producción 
+            </p>
+        </div>
+    </section>
+    
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">División en conjuntos de datos de prueba y entrenamiento</p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle-icon" src="../../../assets/images/fixed.svg" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                Para la división del conjunto de datos en datos de prueba y datos de entrenamiento, 
+                considerando que se quería tener una cantidad suficiente de datos de 
+                entrenamiento para un mejor funcionamiento del modelo, 
+                se optó por dividirlos en un 75% para entrenamiento y un 25% para prueba, 
+                como podemos observar en la siguiente tabla:
+            
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 5. Porcentaje de datos de prueba y datos de entrenamiento</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Datos</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title">Porcentaje</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Datos de entrenamiento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">75%</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Datos de prueba</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">25%</p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">División en atributos descriptivos y atributos objetivos</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                También se seleccionó a los atributos descriptivos: 
+                código de departamento, código de municipio, año y área sembrada; 
+                y el atributó objetivo, que como se explicó anteriormente es el atributo Producción. 
+                Como se ha planteado desde el comienzo, el objetivo del modelo es predecir 
+                la producción de café dependiendo del conjunto de atributos disponibles. 
+                La división quedó establecida de la siguiente manera:
+            
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 6. Atributos descriptivos y atributos objetivos</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Atributo descriptivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-title">Atributo objetivo</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Departamento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">Producción</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Municipio</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name"><br></p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Año</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name"><br></p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Área sembrada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name"><br></p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-name">Área cosechada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name"><br></p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+</article>

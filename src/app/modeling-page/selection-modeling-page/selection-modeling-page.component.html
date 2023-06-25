@@ -1,0 +1,57 @@
+
+<article class="article right" data-aos="fade-down-right" >
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Selección de técnicas de modelado</p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Técnicas de modelado</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                De todas las técnicas de modelado que tenemos a nuestra 
+                disposición hemos decidido seleccionar una técnica de 
+                regresión logística y una técnica de regresión lineal. 
+                Después de construir los modelos de regresión tanto lineal 
+                como logístico serán evaluados y se compararán sus resultados, 
+                para seleccionar cuál de estos se ajusta mejor a nuestro conjunto de datos.
+            
+            </p>
+        </div>
+    </section>
+
+    <section class="sect three">
+        <div>
+            <p class="p" id="p-o-r">Modelos</p>
+        </div>
+        <div class="one three">
+            <div class="ot" (click)="load_modal(modal_one)">
+                <div class="div-img">
+                    <div class="st">
+                        <img class="icon middle" src="../../../assets/images/extract.png" alt="Not found">
+                    </div>
+                </div>
+                <p class="p">Regresión lineal</p>
+            </div>
+            <div class="ot" (click)="load_modal(modal_two)">
+                <div class="div-img">
+                    <div class="st">
+                        <img class="icon middle" src="../../../assets/images/load.png" alt="Not found">
+                    </div>
+                </div>
+                <p class="p">Regresión logística</p>
+            </div>
+
+        </div>
+        
+    </section>
+
+    <app-modal></app-modal>
+    
+</article>

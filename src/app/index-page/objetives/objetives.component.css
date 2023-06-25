@@ -1,0 +1,142 @@
+
+.sect{
+    background-color: white;
+    margin: 10px;
+    padding: 2rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    font-size: .8rem;
+}
+
+section div{
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5px 15px 5px 15px;;
+    padding: 0;
+}
+
+a{
+    background-color: white;
+    text-decoration: none;
+}
+
+.p{
+    background-color: white;
+    color: #838383;
+    margin: 10px 0 10px 0;
+    flex: 3;
+    font-family: var(--font-family-text);
+}
+
+article section{
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 0 15px 0 15px;
+}
+
+article .one div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-one-r{
+    margin: 0;
+    flex: 30;
+    padding: 0.5rem 0;
+    font-size: .9rem;
+}
+
+.sect.two{
+    padding: 1rem;
+}
+
+#two-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0 35px;
+}
+
+.middle{
+    margin-right: 2rem;
+    width: 2rem;
+}
+
+.three{
+    flex: 14;
+}
+
+#p-four-r{
+    padding: 0 40px 0 20px;
+}
+
+.three div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-o-r{
+    padding-left: 3px;
+    margin: 0;
+    flex: 30;
+}
+
+.ot{
+    width: 22%;
+    height: 12rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    background-size: 100% 30%;
+    background-repeat: no-repeat;
+}
+
+.ot .div-img{
+    width: 100%;
+    height: 50%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.st{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 80%;
+    margin: 10px 2px 0 0;
+}
+
+.st img{
+    width: 50%;
+    margin: 1rem;
+}
+
+.ot p{
+    margin: 0;
+    padding: 0;
+}
+
+.sect.three{
+    padding: 1rem;
+}
+
+.one.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,254 @@
+
+.sect{
+    background-color: white;
+    margin: 10px;
+    padding: 2rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    font-size: .8rem;
+}
+
+section div{
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5px 15px 5px 15px;;
+    padding: 0;
+}
+
+a{
+    background-color: white;
+    text-decoration: none;
+}
+
+.p{
+    background-color: white;
+    color: #838383;
+    margin: 0;
+    flex: 3;
+    font-family: var(--font-family-text);
+}
+
+article section{
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 0 15px 0 15px;
+}
+
+article .one div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-one-r{
+    margin: 0;
+    flex: 30;
+    padding: 0.5rem 0;
+    font-size: .9rem;
+    color: var(--bg-footer);
+}
+
+.p.three.r{
+    color: var(--bg-footer);
+}
+
+.sect.two{
+    padding: 1rem;
+}
+
+#two-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0 35px;
+}
+
+.middle{
+    margin-right: 2rem;
+    width: 2rem;
+}
+
+#p-four-r{
+    padding: 0 40px 0 20px;
+}
+
+.three div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-o-r{
+    padding-left: 3px;
+    margin: 0;
+}
+
+.ot{
+    width: 25%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: .5rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 8px;
+    background: var(--bg-color);
+    cursor: pointer;
+    font-size: .8rem;
+}
+
+.ot:hover{
+    transform: scale(1.1);
+    transition: 1s;
+}
+
+.ot .div-img{
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+.st{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    margin-top: .2rem;
+}
+
+.st p{
+    color: var(--bg-footer);
+    font-weight: bold;
+    text-align: center;
+}
+
+.ot p{
+    margin: 0.2rem;
+    padding: 0;
+    text-align: center;
+    background: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sect.three{
+    padding: 1rem;
+    background: url('../../../assets/images/tendencias.jpg');
+}
+
+.one.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+}
+
+.three .three{
+    padding: .2rem;
+    margin: .2rem;
+}
+
+.fig-4{
+    width: 30rem;
+    cursor: pointer;
+}
+
+.fig-4:hover{
+    transform: scale(1.2);
+    transition: 1s;
+}
+
+#p-fig-4{
+    font-size: .6rem;
+    text-align: center;
+}
+
+hr{
+    margin: 2rem 4rem 2rem 4rem;
+}
+
+.img-caja{
+    width: 22rem;
+    height: 12rem;
+}
+
+#percentaje{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+#percentaje .div-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 20rem;
+    height: 20rem;
+}
+
+#mising-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    padding: 0;
+    margin: 0;
+}
+
+.col-name{
+    width: 4.5rem;
+    text-align: center;
+    color: #838383;
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+    margin: 0.2rem;
+}
+
+.col-title{
+    width: 15rem;
+    text-align: left;
+    color: #838383;
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+    margin: 0.2rem;
+}
+
+.title-col{
+    color: var(--bg-footer);
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+}
+
+#legend{
+    margin-top: 2rem;
+}
+
+#sect-table{
+    padding: 0;
+}
+
+#sect-table div{
+    margin: 0;
+    padding: 0;
+}

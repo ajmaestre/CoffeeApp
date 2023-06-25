@@ -1,0 +1,459 @@
+
+<article class="article right">
+
+    <section class="sect one" data-aos="fade-down-right" >
+        <div>
+            <p class="p" id="p-one-r">Verificación de la calidad de los datos</p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Después de haber sido realizada la exploración de los datos 
+                pudimos suponer que existían datos faltantes en el conjunto de datos. 
+                Al realizar un análisis general en el conjunto de datos detectamos 
+                que existían datos nulos en una sola variable: Rendimiento, 
+                con un total de 37 valores faltantes, como podemos observar en 
+                la tabla 2 de una forma más clara. Durante la exploración de 
+                los datos también confirmamos la distribución de las variables categóricas; 
+                por ejemplo, para el caso de la variable departamento confirmamos que en el 
+                registro existen 24 departamentos distintos. Para la variable municipio, 
+                se encontraron 615 municipios distintos. 
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 2. Datos faltantes en el conjunto de datos</p>
+        </div>
+        <div class="r" id="mising-table">
+
+            <section class="sect two" id="sect-table">
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Código del departamento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.c_d_dep}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Departamento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.departamento}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Código del municipio</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.c_d_mun}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Municipio</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.municipio}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Grupo de cultivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.grupo_de_cultivo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Subgrupo de cultivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.subgrupo_de_cultivo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Cultivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.cultivo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Sistema productivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.desagregaci_n_regional_y}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Año de producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.a_o}}</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="sect two" id="sect-table">
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Periodo de producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.periodo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Área sembrada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.rea_sembrada_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Área cosechada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.rea_cosechada_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.producci_n_t}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Rendimiento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.rendimiento_t_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Estado físico de la producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.estado_fisico_produccion}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Nombre científico</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.nombre_cientifico}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Ciclo de cultivo</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{numAtr.ciclo_de_cultivo}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Número de atributos</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">17</p>
+                    </div>
+                </div>
+            </section>
+
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Para la variable grupo de cultivo, solo se encontró un tipo de dato categórico: 
+                otros permanentes. Para la variable sub grupo de cultivo también se encontró 
+                un solo tipo de dato categórico distinto: café, y para la variable cultivo 
+                también se obtuvo un solo dato categórico: café, lo cual concuerda con nuestro 
+                objetivo de solo analizar los cultivos de café en el conjunto de datos. 
+                Para el ciclo de cultivo también obtuvimos un solo tipo de dato categórico: 
+                permanente. Y para el estado físico, obtuvimos una sola categoría: café verde equivalente.
+                
+                También se hallaron algunas inconsistencias en los datos de la variable rendimiento. 
+                Esta variable se calcula dividiendo la variable producción entre la variable área cosechada, 
+                pero durante la exploración detectamos que un total de 981 datos no tienen el valor correcto. 
+                Como podemos observar en la gráfica 12, la comparación entre el valor calculado entre 
+                la división de la producción y el área cosechada no coincide en algunos puntos con el 
+                valor de la variable rendimiento. 
+
+                Esta incongruencia también podría deberse a valores incorrectos en los atributos 
+                Producción y Área Cosechada, como podemos observar en la gráfica, 
+                que entre los años 2008 a 2010 muestra una porción de datos faltantes. 
+                También podemos resaltar que la cantidad total entre los dos atributos no coincide ya que, 
+                mientras el atributo rendimiento reporta un total de 6678.32 toneladas por hectárea, 
+                la división entre la producción y el área cosechada reporta un total de 6190.56, 
+                es decir, existe una clara diferencia de 487.76 toneladas por hectárea.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_12.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 12: Comparación entre el rendimiento y la producción / área cosechada
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Atributos con valores en cero dentro del conjunto de datos</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Para las variables numéricas Área Cosechada, Área Sembrada y Producción, 
+                se detectaron valores en cero, como se puede visualizar en la tabla 3. 
+                Para el atributo Área Cosechada se detectaron 44 valores en cero, 
+                para el Área Sembrada obtuvimos solo dos valores en cero y para el atributo 
+                Producción se detectaron un total de 47 valores en cero. 
+                Cabe mencionar que la presencia de estos valores en cero dentro de las tres 
+                variables antes mencionadas (Área Cosechada, Área Sembrada y Producción), 
+                podría explicar las inconsistencias que hemos estado observando en las gráficas anteriores. 
+                
+                Los valores en cero son un problema que se deberá solucionar, 
+                ya que estos podrían estar afectando el grado de correlación entre los atributos. 
+                Estos valores en cero presentes dentro del conjunto de datos posiblemente 
+                se deben a errores de registro, ya sea que no se conocía el valor real que 
+                se debía ingresar o que simplemente hubo un error humano. 
+                Más adelante, en la etapa de preparación de los datos utilizaremos 
+                varias técnicas para tratar con aquellos valores en cero, como también los valores faltantes.                                                                                                                                                               
+
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Tabla 3. Variables numéricas con valores en cero</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Código del departamento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.c_d_dep}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Código del municipio</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.c_d_mun}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Año de producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.a_o}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Área Sembrada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.rea_sembrada_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Área Cosechada</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.rea_cosechada_ha}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Producción</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.producci_n_t}}</p>
+                    </div>
+                </div>
+                <div id="two-r">
+                    <div id="table">
+                        <p class="col-title">Rendimiento</p>
+                    </div>
+                    <div id="table">
+                        <p class="col-name">{{dataZero.rendimiento_t_ha}}</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect one" data-aos="fade-down-right">
+        <div>
+            <p class="p" id="p-one-r">Identificación de datos atípicos dentro del conjunto de datos</p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Como podemos ver en la gráfica 13, algunos valores para los atributos área cosechada 
+                y área sembrada parecen desviarse del comportamiento regular de los datos. 
+                En el grafico podemos observar que para el área cosechada se detectaron un 
+                total de 670 valores atípicos y para el área sembrada 694, 
+                los cuales fueron identificados por medio del uso del rango intercuartílico. 
+                Estos valores atípicos pueden ser debidos a errores al momento del registro de los datos, 
+                o a mediciones incorrectas. Más adelante en la etapa de preparación de los datos, 
+                dependiendo de la cantidad de datos atípicos, se decidirá como limpiarlos ya sea 
+                remplazarlos por datos dentro del rango esperado o eliminarlos completamente. 
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_13.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 13: diagrama de caja para área sembrada y área cosechada
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                En el gráfico 14 también podemos notar algunos datos atípicos para la variable producción. 
+                Para este atributo se detectaron 726 valores que no se comportan dentro del rango esperado, 
+                utilizando también el enfoque de rango intercuartílico. 
+                Usando el enfoque de rango intercuartílico se determinó que todos los valores 
+                que superan las 3483.25 toneladas del atributo Producción se consideran datos atípicos. 
+                Estos datos atípicos podrían estar afectando el análisis que hemos estado haciendo 
+                sobre el conjunto de datos, por esta razón en la etapa de preparación de los datos 
+                se deberán limpiar todos estos datos atípicos.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_14.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 14: diagrama de caja para producción
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect two" data-aos="fade-down-right" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                En el gráfico 14 también podemos notar algunos datos atípicos para la variable producción. 
+                Para este atributo se detectaron 726 valores que no se comportan dentro del rango esperado, 
+                utilizando también el enfoque de rango intercuartílico. 
+                Usando el enfoque de rango intercuartílico se determinó que todos los valores 
+                que superan las 3483.25 toneladas del atributo Producción se consideran datos atípicos. 
+                Estos datos atípicos podrían estar afectando el análisis que hemos estado haciendo 
+                sobre el conjunto de datos, por esta razón en la etapa de preparación de los datos 
+                se deberán limpiar todos estos datos atípicos.
+                
+                En el gráfico 33 también observamos datos atípicos para la variable rendimiento, 
+                con un total de 132 valores atípicos. Usando el enfoque de rango intercuartílico 
+                se determinó que todos los valores que superaban las 1.715 toneladas por hectárea 
+                en rendimiento se consideran datos atípicos. Cabe mencionar que los valores atípicos 
+                para este atributo podrían deberse o estar relacionados con los valores atípicos de 
+                los atributos Producción y Área Cosechada, por lo tanto, al limpiarlos o tratarlos 
+                quizás también se limpien los valores atípicos del atributo rendimiento.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two" id="percentaje" data-aos="fade-down-right" >
+        <div class="div-img">
+            <div id="two-r">
+                <img class="icon fig-4 img-caja" src="../../../assets/images/grafica_14.png" alt="Not found">
+            </div>
+            <div class="r">
+                <p class="p four r" id="p-fig-4">
+                    Gráfico 14: diagrama de caja para producción
+                </p>
+            </div>
+        </div>
+        <div class="div-img">
+            <div id="two-r">
+                <img class="icon fig-4 img-caja" src="../../../assets/images/grafica_15.png" alt="Not found">
+            </div>
+            <div class="r">
+                <p class="p four r" id="p-fig-4">
+                    Gráfico 15: diagrama de caja para rendimiento
+                </p>
+            </div>
+        </div>
+    </section>
+
+</article>
+
+<hr>

@@ -1,0 +1,339 @@
+
+<article class="article right" data-aos="fade-down-right">
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Limpieza de datos</p>
+        </div>
+    </section>
+
+    <section class="sect two" >
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Para esta etapa de la metodología CRISP-MD realizaremos 
+                un tratamiento general de aquellas fallas que detectamos 
+                en la etapa de verificación de calidad de los datos. 
+                Este tratamiento lo enfocaremos únicamente en aquellos 
+                atributos que hemos seleccionado para la construcción del modelo.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Datos perdidos</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Para el conjunto de atributos que escogimos, 
+                no existen datos faltantes o perdidos, 
+                aquellos atributos que poseían algún dato 
+                faltante fueron desechados en la etapa anterior, 
+                por lo cual esta etapa es innecesaria. 
+                Pero, en el conjunto de atributos numéricos existen algunos datos en cero, 
+                por lo que deben ser limpiados. La cantidad de valores en cero para cada 
+                variable es: para el atributo Área Cosechada 44, 
+                para el Área Sembrada 2 y para el atributo Producción un total de 47.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect three" >
+        <div class="one three">
+            <div class="ot">
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">Área Sembrada</p>
+                    </div>
+                </div>
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">{{dataZero.rea_sembrada_ha}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ot">
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">Área Cosechada</p>
+                    </div>
+                </div>
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">{{dataZero.rea_cosechada_ha}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ot">
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">Producción</p>
+                    </div>
+                </div>
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">{{dataZero.producci_n_t}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Porcentaje de datos iguales a cero</p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                
+                Como podemos ver en la gráfica 16, si comparamos el tamaño 
+                del conjunto de datos en general (7263 instancias), 
+                la cantidad de datos iguales a cero es relativamente pequeña. 
+                Con solo un 1.3% del total (93 valores) de los datos se ha llegado 
+                a la conclusión de que esta pequeña fracción no afectará el análisis 
+                del resto del conjunto de datos, por lo que se decidió que estos 
+                iguales a cero serán eliminados.
+
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_16.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 16: Porcentaje de datos iguales a cero
+            </p>
+        </div>
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right">
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Errores en los datos</p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r"></p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                Para esta etapa trataremos de corregir todos 
+                aquellos errores que detectamos en los datos que hemos escogidos, 
+                como por ejemplo aquellos valores fuera de rango o valores atípicos 
+                que se desvían demasiado de la media. 
+                Para el cálculo preciso de aquellos valores atípicos usaremos 
+                la IQR (rango intercuartílico), que mide la dispersión del 50% medio de los valores.
+
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                Los atributos con valores atípicos en el conjunto de datos escogidos son los siguientes:
+                
+            </p>
+        </div>
+    </section>
+
+    <section class="sect three" >
+        <div class="one three">
+            <div class="ot">
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">Área Sembrada</p>
+                    </div>
+                </div>
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">{{dataOutlider.rea_sembrada_ha}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ot">
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">Área Cosechada</p>
+                    </div>
+                </div>
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">{{dataOutlider.rea_cosechada_ha}}</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ot">
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">Producción</p>
+                    </div>
+                </div>
+                <div class="div-img">
+                    <div class="st">
+                        <p class="p">{{dataOutlider.producci_n_t}}</p>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+    </section>
+
+</article>
+
+<hr>
+
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Área Cosechada </p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+                Cómo podemos observar en la gráfica 17, la cantidad de datos atípicos 
+                para el atributo área cosechada en el conjunto de datos es de 660, 
+                es decir, un 9.1% de los valores para este atributo tienen un 
+                comportamiento que se desvía del resto de los datos. 
+                Dado que el total de datos atípicos para el atributo área cosechada 
+                es un número relativamente importante, se ha decidido que eliminarlos 
+                del conjunto de datos no sería la mejor decisión, por lo tanto, 
+                serán reemplazados por la media aritmética del atributo para que 
+                estos valores más adelante no afecten negativamente la construcción 
+                del modelo en la etapa de modelado. Después de realizar el reemplazo 
+                de los valores atípicos para este atributo por su media aritmética respectiva, 
+                analizaremos su distribución con respecto al resto de atributos y determinaremos 
+                como afecto esta decisión al conjunto de datos. Dependiendo del resultado del 
+                análisis decidiremos si el reemplazo de estos valores por la media fue la 
+                mejor opción o si debemos usar otra estrategia para tratar con estos.
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_17.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 17: Porcentaje de datos atípicos en el atributo área cosechada 
+            </p>
+        </div>
+    </section>
+    
+</article>
+
+<hr>
+
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Área Sembrada</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                Cómo podemos observar en la gráfica 38, la cantidad de datos atípicos 
+                para el atributo área sembrada en el conjunto de datos es de 687, 
+                prácticamente la misma cantidad que para el atributo área cosechada, 
+                es decir, un 9.5% de los valores para este atributo tienen un comportamiento 
+                que se desvía del resto de los datos. Dado que el total de datos atípicos 
+                para el atributo área sembrada también es un número considerablemente grande, 
+                al igual que para el atributo área cosechada, serán reemplazados por la 
+                media aritmética del atributo para que estos valores más adelante no 
+                afecten negativamente la construcción del modelo en la etapa de modelado. 
+                Cabe mencionar que la similitud en cuanto a la cantidad de datos atípicos 
+                entre el atributo área cosechada y el atributo área sembrada podría deberse 
+                a que estos datos están directamente relacionados, es decir, probablemente 
+                estos datos se deben a comportamientos reales de los cultivos de café pero 
+                que se salen de la norma y no son originados por errores de registro en el 
+                conjunto de datos.
+                
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_18.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 18: Porcentaje de datos atípicos en el atributo área sembrada
+            </p>
+        </div>
+    </section>
+    
+</article>
+
+<hr>
+
+<article class="article right"  data-aos="fade-down-right" >
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <p class="p three r">Producción</p>
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-four-r">
+
+                Con alguna semejanza también podemos observar en la gráfica 19, 
+                que la cantidad de datos atípicos para el atributo producción en 
+                el conjunto de datos es de 725, nuevamente una cantidad relativamente 
+                similar que para el atributo de área cosechada y área sembrada; 
+                es decir, un 10.0% de los valores para este atributo tienen un 
+                comportamiento que se desvía del resto de los datos. 
+                Para este atributo también podemos notar una semejanza en la cantidad de 
+                datos atípicos con los atributos área cosechada y área sembrada que, 
+                como mencionamos anteriormente, podría deberse a una relación entre los tres atributos. 
+                Esta relación que presentan los atributos en sus valores atípicos posiblemente 
+                nos dice que estos datos son debidos a comportamiento reales de los cultivos de café, 
+                es decir, cultivos que presentaron una variación considerable con respecto al 
+                resto en el transcurso del tiempo. 
+                
+            </p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div id="two-r">
+            <img class="icon fig-4" src="../../../assets/images/grafica_19.png" alt="Not found">
+        </div>
+        <div class="r">
+            <p class="p four r" id="p-fig-4">
+                Gráfico 19: Porcentaje de datos atípicos en el atributo producción
+            </p>
+        </div>
+    </section>
+    
+</article>
