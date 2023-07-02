@@ -103,7 +103,7 @@ article .one div{
 }
 
 .ot:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .ot .div-img{
@@ -124,8 +124,9 @@ article .one div{
     height: 80%;
 }
 
-.st img{
-    width: 50%;
+.st .img{
+    width: 40%;
+    height: 100%;
     margin: 1rem;
 }
 
@@ -146,4 +147,19 @@ article .one div{
 
 hr{
     margin: 2rem 4rem 2rem 4rem;
+}
+
+#extract{
+    background: url(../../../assets/images/extract.png);
+    background-size: cover;
+}
+
+#load{
+    background: url(../../../assets/images/load.png);
+    background-size: cover;
+}
+
+#transform{
+    background: url(../../../assets/images/transform.png);
+    background-size: cover;
 }

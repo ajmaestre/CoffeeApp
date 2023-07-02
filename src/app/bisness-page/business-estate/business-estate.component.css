@@ -108,11 +108,11 @@ article .one div{
     border-radius: 8px;
     background: var(--bg-color);
     cursor: pointer;
+    transition: 1s;
 }
 
 .ot:hover{
-    transform: scale(1.1);
-    transition: 1s;
+    transform: scale(1.05);
 }
 
 .ot .div-img{
@@ -134,9 +134,25 @@ article .one div{
     margin: 10px 2px 0 0;
 }
 
-.st img{
-    width: 50%;
+.st .img{
+    width: 40%;
+    height: 75%;
     margin: 1rem;
+}
+
+#img_1{
+    background: url(../../../assets/images/extract.png);
+    background-size: cover;
+}
+
+#img_2{
+    background: url(../../../assets/images/transform.png);
+    background-size: cover;
+}
+
+#img_3{
+    background: url(../../../assets/images/load.png);
+    background-size: cover;
 }
 
 .ot p{
@@ -149,7 +165,7 @@ article .one div{
 .sect.three{
     padding: 1rem;
     background: url('../../../assets/images/tendencias.jpg');
-
+    background-size: cover;
 }
 
 .one.three{

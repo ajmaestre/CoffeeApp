@@ -140,6 +140,7 @@ article .one div{
 .sect.three{
     padding: 1rem;
     background: url('../../../assets/images/tendencias.jpg');
+    background-size: cover;
 }
 
 .one.three{

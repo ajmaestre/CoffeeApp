@@ -152,11 +152,15 @@ article .one div{
 
 .fig-4{
     width: 30rem;
+    height: 13rem;
+    background: url(../../../assets/images/fig_4.png);
+    background-size: cover;
     cursor: pointer;
+    transition: 1s;
 }
 
 .fig-4:hover{
-    transform: scale(1.2);
+    transform: scale(1.05);
     transition: 1s;
 }
 
@@ -167,6 +171,7 @@ article .one div{
 
 #btn-modal{
     cursor: pointer;
+    transition: 1s;
 }
 
 #btn-modal:hover{

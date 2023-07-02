@@ -13,8 +13,8 @@ export class CleaningPageComponent implements OnInit, OnDestroy {
   dataZeroSubscription!: Subscription;
   dataOutliderSubscription!: Subscription;
 
-  dataZero!: misingData;
-  dataOutlider!: misingData;
+  dataZero: misingData = {};
+  dataOutlider: misingData = {};
 
   constructor(private preparationService: PreparationDataPageService) { }
 

@@ -9,6 +9,7 @@
     font-size: .8rem;
     height: 75vh;
     background-image: url('../../../assets/images/coffee.jpg');
+    background-size: cover;
 }
 
 section div{
@@ -67,7 +68,7 @@ article section{
     justify-content: center;
 }
 
-img{
+.svg{
     width: 4rem;
     height: 4rem;
 }

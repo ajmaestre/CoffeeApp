@@ -57,8 +57,9 @@ a{
     grid-template-columns: repeat(4, 4rem);
 }
 
-.icon img{
+.icon svg{
     width: 1.5rem;
+    height: 1.5rem;
 }
 
 .aside{

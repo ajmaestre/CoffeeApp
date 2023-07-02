@@ -63,7 +63,7 @@ article .one div{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 10px 20px 0 35px;
+    margin: 0;
 }
 
 .middle{
@@ -100,11 +100,11 @@ article .one div{
     background: var(--bg-color);
     cursor: pointer;
     font-size: .8rem;
+    transition: 1s;
 }
 
 .ot:hover{
-    transform: scale(1.1);
-    transition: 1s;
+    transform: scale(1.05);
 }
 
 .ot .div-img{
@@ -145,6 +145,7 @@ article .one div{
 .sect.three{
     padding: 1rem;
     background: url('../../../assets/images/tendencias.jpg');
+    background-size: cover;
 }
 
 .one.three{
@@ -161,12 +162,33 @@ article .one div{
 
 .fig-4{
     width: 30rem;
+    height: 15rem;
     cursor: pointer;
+    transition: 1s;
 }
 
 .fig-4:hover{
-    transform: scale(1.2);
-    transition: 1s;
+    transform: scale(1.05);
+}
+
+#grafica_1{
+    background: url(../../../assets/images/grafica_1.png);
+    background-size: cover;
+}
+
+#grafica_2{
+    background: url(../../../assets/images/grafica_2.png);
+    background-size: cover;
+}
+
+#grafica_3{
+    background: url(../../../assets/images/grafica_3.png);
+    background-size: cover;
+}
+
+#grafica_4{
+    background: url(../../../assets/images/grafica_4.png);
+    background-size: cover;
 }
 
 #p-fig-4{
@@ -195,6 +217,7 @@ hr{
     font-size: .7rem;
     border: 0.5px solid;
     margin: 0;
+    padding: .2rem .2rem;
 }
 
 .title-col{
@@ -204,5 +227,5 @@ hr{
 }
 
 #legend{
-    margin-top: 2rem;
+    margin-top: 1rem;
 }

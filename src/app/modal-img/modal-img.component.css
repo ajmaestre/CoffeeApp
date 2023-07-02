@@ -4,12 +4,7 @@
     top: 5%;
     left: 25%;
     width: 45rem;
-    transform: scale(0.9);
-}
-
-.page:hover{
-    transform: scale(1);
-    transition: 1s;
+    animation: show-modal 1s ease normal;
 }
 
 .sect{
@@ -117,10 +112,13 @@ article .one div{
     display: flex;
     align-items: flex-start;
     justify-content: flex-end;
+    cursor: pointer;
+    transition: 1s;
 }
 
 .modal_close:hover{
     color: red;
+    transform: scale(1.1);
 }
 
 ul li{
@@ -131,6 +129,25 @@ ul li{
     margin-top: 0.2rem;
 }
 
-img{
-    width: 40rem;
+.img{
+    width: 30rem;
+    height: 25rem;
+}
+
+#div-image{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes show-modal {
+    40%{
+        transform: scale(1.1);
+    }
+    80%{
+        transform: scale(.9);
+    }
+    100%{
+        transform: scale(1);
+    }
 }

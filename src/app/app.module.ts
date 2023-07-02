@@ -51,6 +51,11 @@ import { ModelsHomeComponent } from './models-page/models-home/models-home.compo
 import { ModelsLogisticComponent } from './models-page/models-logistic/models-logistic.component';
 import { ModelsLinealComponent } from './models-page/models-lineal/models-lineal.component';
 import { ModelsConclutionComponent } from './models-page/models-conclution/models-conclution.component';
+import { LogoComponent } from './svg/logo/logo.component';
+import { WwwComponent } from './svg/www/www.component';
+import { CloudComponent } from './svg/cloud/cloud.component';
+import { FixedComponent } from './svg/fixed/fixed.component';
+import { CloudWhiteComponent } from './svg/cloud-white/cloud-white.component';
 
 @NgModule({
   declarations: [
@@ -100,7 +105,12 @@ import { ModelsConclutionComponent } from './models-page/models-conclution/model
     ModelsHomeComponent,
     ModelsLogisticComponent,
     ModelsLinealComponent,
-    ModelsConclutionComponent
+    ModelsConclutionComponent,
+    LogoComponent,
+    WwwComponent,
+    CloudComponent,
+    FixedComponent,
+    CloudWhiteComponent
   ],
   imports: [
     BrowserModule,

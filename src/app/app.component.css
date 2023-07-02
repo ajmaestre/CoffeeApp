@@ -1,6 +1,7 @@
 
 app-nav{
     position: fixed;
+    z-index: 2;
 }
 
 .main{

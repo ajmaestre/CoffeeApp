@@ -1,18 +1,17 @@
 import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http'
 import { Observable, tap } from 'rxjs';
+import { environment } from 'src/environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class ComprensionDataPageService {
 
-  BASE_URL: string = 'http://localhost:8000';
-
   constructor(private http: HttpClient) { }
 
   getResumeStatistic(): Observable<any>{
-    return this.http.get<any>(`${this.BASE_URL}/data-comprension/resume-statistic`).pipe(
+    return this.http.get<any>(`${environment.BASE_URL}/data-etl/resume-statistic`).pipe(
       tap(
         (res) => {
           
@@ -25,7 +24,7 @@ export class ComprensionDataPageService {
   }
 
   getMinsingData(): Observable<any>{
-    return this.http.get<any>(`${this.BASE_URL}/data-comprension/mising-data`).pipe(
+    return this.http.get<any>(`${environment.BASE_URL}/data-etl/mising-data`).pipe(
       tap(
         (res) => {
           
@@ -38,7 +37,7 @@ export class ComprensionDataPageService {
   }
 
   getAllDataInZero(): Observable<any>{
-    return this.http.get<any>(`${this.BASE_URL}/data-comprension/all-data-zeros`).pipe(
+    return this.http.get<any>(`${environment.BASE_URL}/data-etl/all-data-zeros`).pipe(
       tap(
         (res) => {
           

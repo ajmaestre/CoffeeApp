@@ -1,0 +1,277 @@
+
+.sect{
+    background-color: white;
+    margin: 10px;
+    padding: 2rem;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    font-size: .8rem;
+}
+
+section div{
+    background-color: white;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    margin: 5px 15px 5px 15px;;
+    padding: 0;
+}
+
+a{
+    background-color: white;
+    text-decoration: none;
+}
+
+.p{
+    background-color: white;
+    color: #838383;
+    margin: 10px 0 10px 0;
+    flex: 3;
+    font-family: var(--font-family-text);
+}
+
+article section{
+    background-color: white;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    margin: 20px;
+    padding: 0 15px 0 15px;
+}
+
+article .one div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-one-r{
+    margin: 0;
+    flex: 30;
+    padding: 0.5rem 0;
+    font-size: .9rem;
+}
+
+.sect.two{
+    padding: 1rem;
+}
+
+#two-r{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 20px 0 35px;
+}
+
+.middle{
+    margin-right: 2rem;
+    width: 2rem;
+}
+
+.three{
+    flex: 14;
+}
+
+#p-four-r{
+    padding: 0 40px 0 20px;
+}
+
+.three div{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#p-o-r{
+    padding-left: 3px;
+    margin: 0;
+    flex: 30;
+}
+
+.ot{
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 2rem;
+    border-radius: 8px;
+}
+
+.ot .div-img{
+    width: 40%;
+    height: 20%;
+    margin: 1rem 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.st{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 65%;
+    height: 40%;
+}
+
+.st img{
+    width: 50%;
+    margin: 1rem;
+}
+
+.ot p{
+    margin: 0;
+    padding: 1rem;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+#title{
+    height: 2rem;
+}
+
+.text{
+    height: 7rem;
+}
+
+.sect.three{
+    padding: 1rem;
+}
+
+.one.three{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-us-body{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact-us-body .form-body{
+    width: 100%;
+    height: auto;
+    background: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row-reverse;
+    flex-wrap: wrap-reverse;
+    box-shadow: 12px 12px 34px #00000021;
+    padding: 16px;
+    border-radius: 10px;
+}
+
+.contact-us-body .form-body form{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.contact-us-body .form-body form input{
+    margin: 12px 0px 12px 0px;
+    width: 15rem;
+    height: 2.3rem;
+    border-radius: 10px;
+    border: none;
+    background: #afafaf;
+    font-size: larger;
+    color: white;
+    padding: 0px 12px 0px 12px;
+}
+
+.contact-us-body .form-body form select{
+    margin: 12px 0px 12px 0px;
+    width: 18rem;
+    height: 2.3rem;
+    border-radius: 10px;
+    border: none;
+    background: #afafaf;
+    font-size: larger;
+    color: white;
+    padding: 0px 12px 0px 12px;
+}
+
+.contact-us-body .form-body form button{
+    margin: 12px 0px;
+    width: 12rem;
+    height: 2.4rem;
+    border-radius: 10px;
+    background: var(--bg-foot);
+    font-size: larger;
+    font-weight: bold;
+    cursor: pointer;
+    color: aliceblue;
+    border: none;
+}
+
+.contact-us-body .form-body form button:hover{
+    background: var(--bg-footer);
+}
+
+#mising-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+}
+
+#table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid;
+    padding: 2rem;
+    margin: 0;
+    height: 3rem;
+}
+
+.col-name{
+    width: 15rem;
+    text-align: center;
+    color: #838383;
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+    margin: 1rem;
+}
+
+.col-title{
+    width: 15rem;
+    text-align: center;
+    color: white;
+    font-family: var(--font-family-title);
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem;
+}
+
+.title-col{
+    color: var(--bg-footer);
+    font-family: var(--font-family-title);
+    font-size: .7rem;
+}
+
+#legend{
+    margin-top: 2rem;
+}
+
+#sect-table{
+    padding: 0;
+}
+
+#sect-table div{
+    margin: 0;
+    padding: 0;
+}

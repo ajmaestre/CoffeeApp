@@ -104,7 +104,7 @@ article .one div{
 }
 
 .ot:hover{
-    transform: scale(1.1);
+    transform: scale(1.05);
 }
 
 .ot .div-img{
@@ -122,11 +122,12 @@ article .one div{
     justify-content: center;
     align-items: center;
     width: 65%;
-    height: 40%;
+    height: 60%;
 }
 
-.st img{
-    width: 50%;
+.st .img{
+    width: 45%;
+    height: 100%;
     margin: 1rem;
 }
 
@@ -156,7 +157,6 @@ article .one div{
     justify-content: center;
 }
 
-
 #mising-table{
     display: flex;
     align-items: center;
@@ -170,7 +170,7 @@ article .one div{
     align-items: center;
     justify-content: center;
     border: 1px solid;
-    padding: 2rem;
+    padding: 1rem;
     margin: 0;
 }
 
@@ -180,7 +180,7 @@ article .one div{
     color: #838383;
     font-family: var(--font-family-title);
     font-size: .7rem;
-    margin: 1rem;
+    margin: .7rem;
 }
 
 .col-title{
@@ -190,7 +190,7 @@ article .one div{
     font-family: var(--font-family-title);
     font-size: .7rem;
     font-weight: bold;
-    margin: 1rem;
+    margin: .7rem;
 }
 
 .title-col{
@@ -225,4 +225,14 @@ article .one div{
 
 hr{
     margin: 2rem 4rem 2rem 4rem;
+}
+
+#load{
+    background: url(../../../assets/images/load.png);
+    background-size: cover;
+}
+
+#extract{
+    background: url(../../../assets/images/extract.png);
+    background-size: cover;
 }

@@ -11,7 +11,7 @@ export interface misingData{
     c_d_dep?: number;
     departamento?: string;
     c_d_mun?: number;
-    municipio?: number;
+    municipio?: string;
     grupo_de_cultivo?: string;
     subgrupo_de_cultivo?: string;
     cultivo?: string;

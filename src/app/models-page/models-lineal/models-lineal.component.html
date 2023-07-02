@@ -1,1 +1,61 @@
-<p>models-lineal works!</p>
+
+<article class="article right" data-aos="fade-down-right" >
+
+    <section class="sect one">
+        <div>
+            <p class="p" id="p-one-r">Modelo de regresión lineal</p>
+        </div>
+    </section>
+
+    <section class="sect two">
+        <div>
+            <p class="p" id="p-o-r">Predicción</p>
+        </div>
+        <div class="r" id="mising-table">
+            <section class="sect two" id="sect-table">
+
+                <div id="two-r">
+                    <div id="table" [ngStyle]="style_prediction">
+                        <p class="col-title">{{prediction}}</p>
+                    </div>
+                    <div id="table" [ngStyle]="style_prediction">
+                        <p class="col-title">Hectáreas</p>
+                    </div>
+                </div>
+                
+            </section>
+        </div>
+    </section>
+
+    <section class="sect three">
+        <div>
+            <p class="p" id="p-o-r">Datos</p>
+        </div>
+        <div class="one three">
+            <div class="ot">
+                <div class="contact-us-body" id="contact">
+                    <div class="form-body">
+                        <form>
+                            <select [(ngModel)]="deptSelected" name="departamentos" id="departamentos" (change)="selectDept()">
+                                <option value="departamento" disabled>Departamento</option>
+                                <option *ngFor="let atr of depts | keyvalue" value="{{atr.key}}">
+                                    {{atr.key}}
+                                </option>
+                            </select>
+                            <select [(ngModel)]="munSelected" name="municipios" id="municipios" (change)="selectMun()">
+                                <option value="municipio" disabled>Municipio</option>
+                                <option *ngFor="let atr of muns | keyvalue" value="{{atr.key}}">
+                                    {{atr.key}}
+                                </option>
+                            </select>
+                            <input [(ngModel)]="dataDescrive.a_o" type="number" placeholder="Año" name="a_o">
+                            <input [(ngModel)]="dataDescrive.rea_sembrada_ha" type="number" placeholder="Área sembrada (hectáreas)" name="rea_sembrada_ha">
+                            <button type="submit" (click)="getPrediction()">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+</article>

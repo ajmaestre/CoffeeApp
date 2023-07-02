@@ -1,7 +1,6 @@
 import { Component, OnInit, OnDestroy } from '@angular/core';
 import { ComprensionDataPageService } from '../comprension-data-page.service';
 import { Subscription } from 'rxjs';
-import { numberAtributes } from 'src/app/interfaces/numberAtributes';
 import { misingData } from 'src/app/interfaces/misingData';
 
 @Component({
@@ -14,7 +13,7 @@ export class DataVerificationComponent implements OnInit, OnDestroy {
   misingSubscription!: Subscription;
   dataZeroSubscription!: Subscription;
   numAtr: misingData = {};
-  dataZero!: misingData;
+  dataZero: misingData = {};
 
   constructor(private comprensionService: ComprensionDataPageService) { }
 

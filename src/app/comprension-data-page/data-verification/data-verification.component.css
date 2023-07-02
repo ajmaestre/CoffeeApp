@@ -100,11 +100,11 @@ article .one div{
     background: var(--bg-color);
     cursor: pointer;
     font-size: .8rem;
+    transition: 1s;
 }
 
 .ot:hover{
-    transform: scale(1.1);
-    transition: 1s;
+    transform: scale(1.05);
 }
 
 .ot .div-img{
@@ -145,6 +145,7 @@ article .one div{
 .sect.three{
     padding: 1rem;
     background: url('../../../assets/images/tendencias.jpg');
+    background-size: cover;
 }
 
 .one.three{
@@ -161,12 +162,13 @@ article .one div{
 
 .fig-4{
     width: 30rem;
+    height: 15rem;
     cursor: pointer;
+    transition: 1s;
 }
 
 .fig-4:hover{
-    transform: scale(1.2);
-    transition: 1s;
+    transform: scale(1.05);
 }
 
 #p-fig-4{
@@ -185,7 +187,7 @@ hr{
 
 #percentaje{
     display: flex;
-    justify-content: center;
+    justify-content: space-evenly;
     align-items: center;
     flex-direction: row;
 }
@@ -195,8 +197,8 @@ hr{
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    width: 20rem;
-    height: 20rem;
+    width: 22rem;
+    height: 15rem;
 }
 
 #mising-table{
@@ -251,4 +253,33 @@ hr{
 #sect-table div{
     margin: 0;
     padding: 0;
+}
+
+#grafica_12{
+    background: url(../../../assets/images/grafica_12.png);
+    background-size: cover;
+}
+
+#grafica_13{
+    background: url(../../../assets/images/grafica_13.png);
+    background-size: cover;
+}
+
+#grafica_14{
+    background: url(../../../assets/images/grafica_14.png);
+    background-size: cover;
+}
+
+#grafica_15{
+    width: 20rem;
+    height: 10rem;
+    background: url(../../../assets/images/grafica_15.png);
+    background-size: cover;
+}
+
+#grafica_16{
+    width: 20rem;
+    height: 10rem;
+    background: url(../../../assets/images/grafica_14.png);
+    background-size: cover;
 }

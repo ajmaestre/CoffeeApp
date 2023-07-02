@@ -21,7 +21,7 @@
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <app-logo class="icon middle"></app-logo>
             <p class="p three r">Datos perdidos</p>
         </div>
         <div class="r">
@@ -112,7 +112,7 @@
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon fig-4" src="../../../assets/images/grafica_16.png" alt="Not found">
+            <div class="icon fig-4" id="grafica_16"></div>
         </div>
         <div class="r">
             <p class="p four r" id="p-fig-4">
@@ -135,7 +135,7 @@
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <app-logo class="icon middle"></app-logo>
             <p class="p three r"></p>
         </div>
         <div class="r">
@@ -213,7 +213,7 @@
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <app-logo class="icon middle"></app-logo>
             <p class="p three r">Área Cosechada </p>
         </div>
         <div class="r">
@@ -227,19 +227,14 @@
                 del conjunto de datos no sería la mejor decisión, por lo tanto, 
                 serán reemplazados por la media aritmética del atributo para que 
                 estos valores más adelante no afecten negativamente la construcción 
-                del modelo en la etapa de modelado. Después de realizar el reemplazo 
-                de los valores atípicos para este atributo por su media aritmética respectiva, 
-                analizaremos su distribución con respecto al resto de atributos y determinaremos 
-                como afecto esta decisión al conjunto de datos. Dependiendo del resultado del 
-                análisis decidiremos si el reemplazo de estos valores por la media fue la 
-                mejor opción o si debemos usar otra estrategia para tratar con estos.
+                del modelo en la etapa de modelado. 
             </p>
         </div>
     </section>
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon fig-4" src="../../../assets/images/grafica_17.png" alt="Not found">
+            <div class="icon fig-4" id="grafica_17"></div>
         </div>
         <div class="r">
             <p class="p four r" id="p-fig-4">
@@ -256,13 +251,13 @@
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <app-logo class="icon middle"></app-logo>
             <p class="p three r">Área Sembrada</p>
         </div>
         <div class="r">
             <p class="p four r" id="p-four-r">
 
-                Cómo podemos observar en la gráfica 38, la cantidad de datos atípicos 
+                Cómo podemos observar en la gráfica 18, la cantidad de datos atípicos 
                 para el atributo área sembrada en el conjunto de datos es de 687, 
                 prácticamente la misma cantidad que para el atributo área cosechada, 
                 es decir, un 9.5% de los valores para este atributo tienen un comportamiento 
@@ -271,12 +266,6 @@
                 al igual que para el atributo área cosechada, serán reemplazados por la 
                 media aritmética del atributo para que estos valores más adelante no 
                 afecten negativamente la construcción del modelo en la etapa de modelado. 
-                Cabe mencionar que la similitud en cuanto a la cantidad de datos atípicos 
-                entre el atributo área cosechada y el atributo área sembrada podría deberse 
-                a que estos datos están directamente relacionados, es decir, probablemente 
-                estos datos se deben a comportamientos reales de los cultivos de café pero 
-                que se salen de la norma y no son originados por errores de registro en el 
-                conjunto de datos.
                 
             </p>
         </div>
@@ -284,7 +273,7 @@
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon fig-4" src="../../../assets/images/grafica_18.png" alt="Not found">
+            <div class="icon fig-4" id="grafica_18"></div>
         </div>
         <div class="r">
             <p class="p four r" id="p-fig-4">
@@ -301,7 +290,7 @@
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon middle" src="../../../assets/images/logo.svg" alt="Not found">
+            <app-logo class="icon middle"></app-logo>
             <p class="p three r">Producción</p>
         </div>
         <div class="r">
@@ -316,10 +305,6 @@
                 Para este atributo también podemos notar una semejanza en la cantidad de 
                 datos atípicos con los atributos área cosechada y área sembrada que, 
                 como mencionamos anteriormente, podría deberse a una relación entre los tres atributos. 
-                Esta relación que presentan los atributos en sus valores atípicos posiblemente 
-                nos dice que estos datos son debidos a comportamiento reales de los cultivos de café, 
-                es decir, cultivos que presentaron una variación considerable con respecto al 
-                resto en el transcurso del tiempo. 
                 
             </p>
         </div>
@@ -327,7 +312,7 @@
 
     <section class="sect two">
         <div id="two-r">
-            <img class="icon fig-4" src="../../../assets/images/grafica_19.png" alt="Not found">
+            <div class="icon fig-4" id="grafica_19"></div>
         </div>
         <div class="r">
             <p class="p four r" id="p-fig-4">
