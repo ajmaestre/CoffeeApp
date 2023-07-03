@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnDestroy } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { misingData } from 'src/app/interfaces/misingData';
 import { ModelsPageService } from '../models-page.service';
@@ -8,7 +8,7 @@ import { ModelsPageService } from '../models-page.service';
   templateUrl: './models-lineal.component.html',
   styleUrls: ['./models-lineal.component.css']
 })
-export class ModelsLinealComponent implements OnInit {
+export class ModelsLinealComponent implements OnInit, OnDestroy {
 
   predictionSubscription!: Subscription;
   listDeptSubscription!: Subscription;
@@ -21,6 +21,9 @@ export class ModelsLinealComponent implements OnInit {
   muns = [];
   deptSelected: string = 'departamento';
   munSelected: string = 'municipio';
+  style_title = {
+    'background-color': '#666'
+  };
   style_prediction = {
     'background-color': '#afafaf'
   };

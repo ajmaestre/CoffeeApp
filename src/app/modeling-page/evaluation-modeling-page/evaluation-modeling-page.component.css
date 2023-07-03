@@ -49,6 +49,7 @@ article .one div{
     flex: 30;
     padding: 0.5rem 0;
     font-size: .9rem;
+    color: var(--bg-footer);
 }
 
 .sect.two{
@@ -69,6 +70,7 @@ article .one div{
 
 .three{
     flex: 14;
+    color: var(--bg-footer);
 }
 
 #p-four-r{

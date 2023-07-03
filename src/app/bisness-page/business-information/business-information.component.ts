@@ -14,7 +14,7 @@ export class BusinessInformationComponent implements OnInit {
   }
 
   load_modal(){
-    this.modalService.title_modal = 'Determinar los objetivos comerciales';
+    this.modalService.title_modal = 'Compilación de la información de la empresa';
     this.modalService.content_modal = [
 
       `En el 2009 la organización para la alimentación y 

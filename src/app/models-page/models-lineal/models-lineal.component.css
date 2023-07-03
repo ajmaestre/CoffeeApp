@@ -49,17 +49,19 @@ article .one div{
     flex: 30;
     padding: 0.5rem 0;
     font-size: .9rem;
+    color: var(--bg-footer);
 }
 
 .sect.two{
     padding: 1rem;
 }
 
-#two-r{
+.two-r{
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 10px 20px 0 35px;
+    border: none;
 }
 
 .middle{
@@ -86,6 +88,7 @@ article .one div{
     padding-left: 3px;
     margin: 0;
     flex: 30;
+    color: var(--bg-footer);
 }
 
 .ot{
@@ -166,7 +169,6 @@ article .one div{
     align-items: center;
     flex-direction: row-reverse;
     flex-wrap: wrap-reverse;
-    box-shadow: 12px 12px 34px #00000021;
     padding: 16px;
     border-radius: 10px;
 }
@@ -187,6 +189,7 @@ article .one div{
     border: none;
     background: #afafaf;
     font-size: larger;
+    font-weight: bold;
     color: white;
     padding: 0px 12px 0px 12px;
 }
@@ -199,6 +202,7 @@ article .one div{
     border: none;
     background: #afafaf;
     font-size: larger;
+    font-weight: bold;
     color: white;
     padding: 0px 12px 0px 12px;
 }
@@ -228,7 +232,7 @@ article .one div{
     margin: 0;
 }
 
-#table{
+.table{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -236,6 +240,14 @@ article .one div{
     padding: 2rem;
     margin: 0;
     height: 3rem;
+}
+
+#table_1{
+    border-radius: 1rem 0 0 1rem;
+}
+
+#table_3{
+    border-radius: 0 1rem 1rem 0;
 }
 
 .col-name{
@@ -248,7 +260,7 @@ article .one div{
 }
 
 .col-title{
-    width: 15rem;
+    width: 10rem;
     text-align: center;
     color: white;
     font-family: var(--font-family-title);
@@ -269,6 +281,12 @@ article .one div{
 
 #sect-table{
     padding: 0;
+    border: none;
+    box-shadow: none;
+    width: 40rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
 }
 
 #sect-table div{

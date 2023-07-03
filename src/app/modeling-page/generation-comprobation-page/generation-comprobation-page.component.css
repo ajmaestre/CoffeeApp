@@ -49,6 +49,7 @@ article .one div{
     flex: 30;
     padding: 0.5rem 0;
     font-size: .9rem;
+    color: var(--bg-footer);
 }
 
 .sect.two{
@@ -86,6 +87,7 @@ article .one div{
     padding-left: 3px;
     margin: 0;
     flex: 30;
+    color: var(--bg-footer);
 }
 
 .ot{

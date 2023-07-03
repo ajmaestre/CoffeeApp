@@ -22,7 +22,9 @@ const routes: Routes = [{ path: '', redirectTo: 'home', pathMatch: 'full' },
                         { path: 'data-comprension', component: ComprensionDataPageComponent},
                         { path: 'data-preparation', component: PreparationDataPageComponent},
                         { path: 'data-modeling', component: ModelingPageComponent},
-                        { path: 'models', component: ModelsPageComponent}];
+                        { path: 'models', component: ModelsPageComponent},
+                        { path: '**', redirectTo: 'home'}
+                      ];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes, routesOptions)],

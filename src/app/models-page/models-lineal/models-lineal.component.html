@@ -1,5 +1,5 @@
 
-<article class="article right" data-aos="fade-down-right" >
+<article class="article right" data-aos="fade-left" >
 
     <section class="sect one">
         <div>
@@ -14,12 +14,15 @@
         <div class="r" id="mising-table">
             <section class="sect two" id="sect-table">
 
-                <div id="two-r">
-                    <div id="table" [ngStyle]="style_prediction">
+                <div class="two-r">
+                    <div class="table" id="table_1" [ngStyle]="style_title">
+                        <p class="col-title">Producción:</p>
+                    </div>
+                    <div class="table" id="table_2" [ngStyle]="style_prediction">
                         <p class="col-title">{{prediction}}</p>
                     </div>
-                    <div id="table" [ngStyle]="style_prediction">
-                        <p class="col-title">Hectáreas</p>
+                    <div class="table" id="table_3" [ngStyle]="style_prediction">
+                        <p class="col-title">Toneladas</p>
                     </div>
                 </div>
                 

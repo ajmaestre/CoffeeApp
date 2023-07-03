@@ -13,13 +13,9 @@ export class ModalImgComponent implements OnInit {
   constructor(public modalImgService: ModalImgService) {}
 
   ngOnInit(): void {
-    
-  }
-
-  loadImg(){
-    console.log(this.modalImgService.url_image);
     this.style_img = {
-      'background-image': `url(../../assets/images/${this.modalImgService.url_image})`
+      'background-image': `url(../../assets/images/${this.modalImgService.url_image})`,
+      'background-size': 'cover'
     };
   }
 

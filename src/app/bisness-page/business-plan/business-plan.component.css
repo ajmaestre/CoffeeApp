@@ -99,11 +99,12 @@ article .one div{
     background: var(--bg-color);
     cursor: pointer;
     font-size: .6rem;
+    transition: 1s;
 }
 
 .ot:hover{
-    transform: scale(1.1);
-    transition: 1s;
+    transform: scale(1.05);
+    box-shadow: 0 0 1.5rem #00000021; 
 }
 
 .ot .div-img{

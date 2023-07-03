@@ -1,31 +1,29 @@
-<article class="article right">
+<article class="article right" data-aos="fade-left">
 
-    <section class="sect two" data-aos="fade-left" data-aos-offset="200" data-aos-delay="50" data-aos-duration="1000"
-        data-aos-easing="ease-in-out" data-aos-mirror="true" data-aos-once="false"
-        data-aos-anchor-placement="top-center">
+    <section class="sect two">
 
         <div class="cards">
             <div class="center">
 
-                <div class="card">
+                <div class="card" (click)="load_modal(modal_one)">
                     <div class="img">
                         <app-www class="svg"></app-www>
                     </div>
                     <div class="info">
-                        <p class="title sub-title">Compresión del negocio</p>
+                        <p class="title sub-title">Comprensión del negocio</p>
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" (click)="load_modal(modal_two)">
                     <div class="img">
                         <app-cloud class="svg"></app-cloud>
                     </div>
                     <div class="info">
-                        <p class="title sub-title">Compresión de datos</p>
+                        <p class="title sub-title">Comprensión de los datos</p>
                     </div>
                 </div>
 
-                <div class="card">
+                <div class="card" (click)="load_modal(modal_three)">
                     <div class="img">
                         <app-fixed class="svg"></app-fixed>
                     </div>
@@ -38,5 +36,7 @@
         </div>
 
     </section>
+
+    <app-modal></app-modal>
 
 </article>

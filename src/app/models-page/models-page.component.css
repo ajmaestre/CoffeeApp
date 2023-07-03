@@ -7,7 +7,7 @@ app-links-msp{
     display: grid;
     grid-template-columns: 20rem auto;
     column-gap: .2rem;
-    margin: 0 6rem;
+    margin: 0 6rem 2rem 6rem;
 }
 
 hr{

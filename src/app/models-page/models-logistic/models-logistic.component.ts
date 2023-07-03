@@ -24,6 +24,9 @@ export class ModelsLogisticComponent implements OnInit, OnDestroy {
   muns = [];
   deptSelected: string = 'departamento';
   munSelected: string = 'municipio';
+  style_title = {
+    'background-color': '#666'
+  };
   style_hight = {
     'background-color': '#afafaf'
   };

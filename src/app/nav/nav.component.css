@@ -8,6 +8,7 @@ header{
     font-family: var(--font-family-title);
     font-size: .9rem;
     padding: .5rem;
+    box-shadow: .5rem .5rem 1.5rem #00000021;
 }
 
 .nav{
@@ -27,6 +28,7 @@ section{
 
 .sect{
     margin: 0;
+    box-shadow: none;
 }
 
 .sect a{
@@ -55,8 +57,12 @@ section a{
     margin: 0;
 }
 
+.nav .sect1{
+    width: 2rem;
+}
+
 #iconLogo{
-    height: 35px;
+    width: 2rem;
     background-color: var(--color--fondo--comp);
     margin: 0;
 }

@@ -1,7 +1,6 @@
 import { HttpClient } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 import { Observable, tap } from 'rxjs';
-import { numberAtributes } from '../interfaces/numberAtributes';
 import { misingData } from '../interfaces/misingData';
 import { environment } from 'src/environments/environment';
 

@@ -5,6 +5,7 @@
     left: 20%;
     width: 60rem;
     animation: show-modal 1s ease normal;
+    z-index: 4;
 }
 
 .sect{
