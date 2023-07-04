@@ -1,7 +1,7 @@
 
 <div class="page" *ngIf="modalService.open_modal">
 
-    <aside class="aside left">
+    <aside class="aside left body">
         <section class="sect two">
             <div id="modal_close">
                 <a class="modal_close" (click)="modalService.open_modal=false">X</a>
@@ -10,6 +10,8 @@
                 <app-logo class="icon middle"></app-logo>
                 <p class="p three r">{{modalService.title_modal}}</p>
             </div>
+        </section>
+        <section class="sect two">
             <div class="r">
                 <ul>
                     <li *ngFor="let content of modalService.content_modal">
@@ -18,9 +20,6 @@
                         </p>
                     </li>
                 </ul>
-            </div>
-            <div class="r" id="r-img">
-                <img src="../../assets/images/{{modalService.url_img}}" alt="">
             </div>
         </section>
     </aside>

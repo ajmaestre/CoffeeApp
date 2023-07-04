@@ -1,11 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalImgService } from 'src/app/modal-img/modal-img.service';
-
-interface moda_img_type {
-  open_modal: boolean;
-  title: string;
-  url_image: string;
-}
 
 @Component({
   selector: 'app-data-exploration',
@@ -14,33 +7,37 @@ interface moda_img_type {
 })
 export class DataExplorationComponent implements OnInit {
 
-  modal_spearman: moda_img_type = {
-    open_modal: true,
-    title: 'Matriz de correlación de Spearman',
-    url_image: 'spearman.png'
-  }
+  modal_s_opened: boolean = false;
+  modal_k_opened: boolean = false;
+  modal_p_opened: boolean = false;
 
-  modal_kendall: moda_img_type = {
-    open_modal: true,
-    title: 'Matriz de correlación de Kendall',
-    url_image: 'kendall.png'
-  }
-
-  modal_pearson: moda_img_type = {
-    open_modal: true,
-    title: 'Matriz de correlación de Pearson',
-    url_image: 'pearson.png'
-  }
-
-  constructor(public modalImgService: ModalImgService) { }
+  constructor() { }
 
   ngOnInit(): void {
   }
 
-  open_modal(modal_img: moda_img_type){
-    this.modalImgService.title_modal = modal_img.title;
-    this.modalImgService.url_image = modal_img.url_image;
-    this.modalImgService.open_modal = modal_img.open_modal;
+  open_modal_s(){
+    if(this.modal_s_opened){
+      this.modal_s_opened = false;
+    }else{
+      this.modal_s_opened = true;
+    }
+  }  
+  
+  open_modal_k(){
+    if(this.modal_k_opened){
+      this.modal_k_opened = false;
+    }else{
+      this.modal_k_opened = true;
+    }
+  }  
+  
+  open_modal_p(){
+    if(this.modal_p_opened){
+      this.modal_p_opened = false;
+    }else{
+      this.modal_p_opened = true;
+    }
   }
 
 }

@@ -106,6 +106,7 @@ article .one div{
 
 .ot:hover{
     transform: scale(1.05);
+    box-shadow: .5rem 1rem 1.5rem #00000021; 
 }
 
 .ot .div-img{
@@ -164,4 +165,86 @@ hr{
 #transform{
     background: url(../../../assets/images/transform.png);
     background-size: cover;
+}
+
+#ecuacion_1{
+    width: 20rem;
+    height: 5rem;
+    background: url(../../../assets/images/ecuacion_1.png);
+    background-size: cover;
+}
+
+#ecuacion_2{
+    width: 15rem;
+    height: 5rem;
+    background: url(../../../assets/images/ecuacion_2.png);
+    background-size: cover;
+}
+
+#ecuacion_3{
+    width: 15rem;
+    height: 5rem;
+    background: url(../../../assets/images/ecuacion_3.png);
+    background-size: cover;
+}
+
+#ecuacion_4{
+    width: 15rem;
+    height: 5rem;
+    background: url(../../../assets/images/ecuacion_4.png);
+    background-size: cover;
+}
+
+#ecuacion_5{
+    width: 15rem;
+    height: 7rem;
+    background: url(../../../assets/images/ecuacion_5.png);
+    background-size: cover;
+}
+
+.modal-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 10, 10, 0.4);
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body{
+    animation: show-modal 1s ease normal;
+}
+
+.modal_close{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--bg-footer);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.modal_close:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+.img-correlation{
+    width: auto;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.sect-modal-title{
+    width: 40rem;
+    height: 3rem;
+}
+
+.sect-modal-content{
+    width: 40rem;
+    height: 15rem;
 }

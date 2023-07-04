@@ -1,12 +1,33 @@
 
 ## Descripción
 
-Esta es una aplicación web donde se aplica 
-la metodología CRISP DM para el desarrollo de 
+Esta es una aplicación web donde se busca el desarrollo de 
 un modelo de predicción para la producción de café en 
-Colombia. La aplicación se desarrolló usando el Framework 
-Angular para el Frontend y el Framework Django para el 
-Backend.
+Colombia por medio del uso la metodología CRISP DM 
+(Cross-Industry Standard Process for Data Mining), 
+que es un método utilizado para orientar 
+proyectos enfocados en minería de datos. 
+
+![CoffeeApp](/src/assets/images-readme/index-page.png)
+
+El objetivo principal de este proyecto se enfoca 
+en la aplicación de las diferentes etapas 
+establecidas en la metodología CRISP-DM sobre un 
+conjunto de datos históricos relacionados con 
+la producción agrícola de café a nivel nacional. Mediante esta 
+metodología se pretende diseñar un modelo 
+predictivo para la producción de cultivos en Colombia. 
+
+![CoffeeApp](/src/assets/images-readme/index-end.png)
+
+Por lo tanto, el proyecto tiene como finalidad 
+aplicar esta metodología al entorno agrícola 
+nacional, mientras que por medio de esta 
+metodología extraemos conclusiones y hacemos 
+predicciones lo más precisas posibles, 
+dentro de lo que permita el modelo desarrollado, partiendo 
+de un conjunto de datos previamente recolectados. 
+
 
 ## Autor
 **ALEXANDER MAESTRE TORRES**
@@ -19,6 +40,7 @@ Backend.
 
 ## Contacto
 - [EMAIL](ajmaestretorres@gmail.com)
+
 
 
 # CoffeeApp

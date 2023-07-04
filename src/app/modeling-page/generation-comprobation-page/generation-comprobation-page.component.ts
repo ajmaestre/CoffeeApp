@@ -1,11 +1,9 @@
 import { Component, OnInit } from '@angular/core';
-import { ModalService } from 'src/app/modal/modal.service';
 
 
 interface modal_type{
-  title: string;
-  content: string[];
-  url_img: string;
+  title?: string;
+  content?: string[];
 }
 
 @Component({
@@ -27,8 +25,6 @@ export class GenerationComprobationPageComponent implements OnInit {
             La exactitud se calcula de la siguiente manera:
     `],
 
-    url_img: 'ecuacion_1.png'
-
   }
 
   
@@ -41,8 +37,6 @@ export class GenerationComprobationPageComponent implements OnInit {
               cuanto a predicciones “positivas” e indica el porcentaje 
               de resultados positivos que son relevantes. Se calcula de la siguiente manera:
     `],
-
-    url_img: 'ecuacion_2.png'
 
   }
 
@@ -57,8 +51,6 @@ export class GenerationComprobationPageComponent implements OnInit {
             Se calcula de la siguiente manera:
     `],
 
-    url_img: 'ecuacion_3.png'
-
   }
 
   modal_four: modal_type = {
@@ -69,8 +61,6 @@ export class GenerationComprobationPageComponent implements OnInit {
             Esta métrica se calcula como el número de predicciones 
             negativas correctas dividido por el número total de negativos:
     `],
-
-    url_img: 'ecuacion_4.png'
 
   }
 
@@ -87,20 +77,23 @@ export class GenerationComprobationPageComponent implements OnInit {
             medio se calcula de la siguiente manera:
     `],
 
-    url_img: 'ecuacion_5.png'
-
   }
 
-  constructor(public modalService: ModalService) { }
+  open_modal: boolean = false;
+  modal_select: modal_type = {};
+
+  constructor() { }
 
   ngOnInit(): void {
   }
 
   load_modal(modal: modal_type){
-    this.modalService.title_modal = modal.title;
-    this.modalService.content_modal = modal.content;
-    this.modalService.url_img = modal.url_img;
-    this.modalService.open_modal = true;
-  }
+    if(this.open_modal){
+      this.open_modal = false;
+    }else{
+      this.open_modal = true;
+    }
+    this.modal_select = modal;
+  }  
 
 }

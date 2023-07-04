@@ -32,7 +32,6 @@ import { DataRecopilationComponent } from './comprension-data-page/data-recopila
 import { DataDescriptionComponent } from './comprension-data-page/data-description/data-description.component';
 import { DataExplorationComponent } from './comprension-data-page/data-exploration/data-exploration.component';
 import { DataVerificationComponent } from './comprension-data-page/data-verification/data-verification.component';
-import { ModalImgComponent } from './modal-img/modal-img.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { LinksPdpComponent } from './preparation-data-page/links-pdp/links-pdp.component';
@@ -89,7 +88,6 @@ import { CloudWhiteComponent } from './svg/cloud-white/cloud-white.component';
     DataDescriptionComponent,
     DataExplorationComponent,
     DataVerificationComponent,
-    ModalImgComponent,
     LinksPdpComponent,
     PreparationHomeComponent,
     SelectionPageComponent,

@@ -8,6 +8,9 @@
     </section>
 
     <section class="sect two">
+        <div id="two-r">
+            <app-fixed class="icon middle"></app-fixed>
+        </div>
         <div class="r">
             <p class="p four r" id="p-four-r">
 
@@ -25,38 +28,68 @@
             <p class="p" id="p-o-r">Métricas</p>
         </div>
         <div class="one three">
-            <div class="ot">
+            <div class="ot" (click)="load_modal_eject()">
                 <div class="div-img">
                     <div class="st">
                         <div class="icon middle img" id="extract"></div>
                     </div>
                 </div>
                 <p class="p title" id="title">Ejecución de los modelos</p>
-                <p class="p text">
-                    Se ejecutarán los dos modelos, uno de regresión lineal y 
-                    otro de regresión logística, con el objetivo de predecir 
-                    la producción de cultivos de café, sobre un conjunto de 
-                    datos de entrenamiento del 75%, con lo cual se deja el 25% 
-                    de datos para el conjunto de prueba. 
-                </p>
             </div>
-            <div class="ot">
+            <div class="ot" (click)="load_modal_desc()">
                 <div class="div-img">
                     <div class="st">
                         <div class="icon middle img" id="load"></div>
                     </div>
                 </div>
                 <p class="p title" id="title">Descripción de los modelos</p>
-                <p class="p text">
-                    A continuación, vamos a describir el resultado de la 
-                    ejecución de cada uno de los modelos para cada objetivo, 
-                    estos resultados se estudiarán más a fondo en la etapa de evaluación.
-                </p>
             </div>
             
         </div>
         
     </section>
+
+    <div class="modal-image" *ngIf="open_modal_eject">
+        <div class="body">
+            <section class="sect two sect-modal-title">
+                <div>
+                    <p class="p" id="p-one-r">Ejecución de los modelos</p>
+                    <a class="modal_close" (click)="open_modal_eject=false">X</a>
+                </div>
+            </section>
+            <section class="sect two sect-modal-content">
+                <div class="r" class="img-correlation">
+                    <p class="p four r" id="p-fig-4">
+                        Se ejecutarán los dos modelos, uno de regresión lineal y 
+                        otro de regresión logística, con el objetivo de predecir 
+                        la producción de cultivos de café, sobre un conjunto de 
+                        datos de entrenamiento del 75%, con lo cual se deja el 25% 
+                        de datos para el conjunto de prueba. 
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="modal-image" *ngIf="open_modal_desc">
+        <div class="body">
+            <section class="sect two sect-modal-title">
+                <div>
+                    <p class="p" id="p-one-r">Descripción de los modelos</p>
+                    <a class="modal_close" (click)="open_modal_desc=false">X</a>
+                </div>
+            </section>
+            <section class="sect two sect-modal-content">
+                <div class="r" class="img-correlation">
+                    <p class="p four r" id="p-fig-4">
+                        A continuación, vamos a describir el resultado de la 
+                        ejecución de cada uno de los modelos para cada objetivo, 
+                        estos resultados se estudiarán más a fondo en la etapa de evaluación.
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
 
 </article>
 

@@ -1,13 +1,13 @@
 import { TestBed } from '@angular/core/testing';
 
-import { ModalImgService } from './modal-img.service';
+import { IndexPageService } from './index-page.service';
 
-describe('ModalImgService', () => {
-  let service: ModalImgService;
+describe('IndexPageService', () => {
+  let service: IndexPageService;
 
   beforeEach(() => {
     TestBed.configureTestingModule({});
-    service = TestBed.inject(ModalImgService);
+    service = TestBed.inject(IndexPageService);
   });
 
   it('should be created', () => {

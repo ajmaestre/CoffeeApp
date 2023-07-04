@@ -71,6 +71,29 @@
         
     </section>
 
-    <app-modal></app-modal>
+    <div class="modal-image" *ngIf="open_modal">
+        <div class="body">
+            <section class="sect two sect-modal-title">
+                <div>
+                    <p class="p" id="p-one-r">{{modal_select.title}}</p>
+                    <a class="modal_close" (click)="open_modal=false">X</a>
+                </div>
+            </section>
+            <section class="sect two sect-modal-content">
+                <div id="two-r" class="img-correlation">
+                    <div class="icon" *ngIf="modal_select.title=='Exactitud'" id="ecuacion_1"></div>
+                    <div class="icon" *ngIf="modal_select.title=='Precisión'" id="ecuacion_2"></div>
+                    <div class="icon" *ngIf="modal_select.title=='Sensibilidad'" id="ecuacion_3"></div>
+                    <div class="icon" *ngIf="modal_select.title=='Especificidad'" id="ecuacion_4"></div>
+                    <div class="icon" *ngIf="modal_select.title=='Error cuadrático medio (RMSE)'" id="ecuacion_5"></div>
+                </div>
+                <div class="r" class="img-correlation">
+                    <p class="p four r" id="p-fig-4">
+                        {{modal_select.content}} 
+                    </p>
+                </div>
+            </section>
+        </div>
+    </div>
     
 </article>

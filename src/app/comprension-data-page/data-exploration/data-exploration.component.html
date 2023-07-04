@@ -111,22 +111,22 @@
 
     <section class="sect three">
         <div class="one three">
-            <div class="ot" (click)="open_modal(modal_spearman)">
+            <div class="ot" (click)="open_modal_s()">
                 <div class="div-img">
                     <div class="st">
                         <p class="p">Matriz de correlación de Spearman</p>
                     </div>
                 </div>
             </div>
-            <div class="ot">
-                <div class="div-img" (click)="open_modal(modal_kendall)">
+            <div class="ot" (click)="open_modal_k()">
+                <div class="div-img">
                     <div class="st">
                         <p class="p">Matriz de correlación de Kendall </p>
                     </div>
                 </div>
             </div>
-            <div class="ot">
-                <div class="div-img" (click)="open_modal(modal_pearson)">
+            <div class="ot" (click)="open_modal_p()">
+                <div class="div-img">
                     <div class="st">
                         <p class="p">Matriz de correlación de Pearson </p>
                     </div>
@@ -137,7 +137,53 @@
         
     </section>
 
-    <app-modal-img *ngIf="modalImgService.open_modal"></app-modal-img>
+    <div class="modal-image" *ngIf="modal_s_opened">
+        <div class="body">
+            <section class="sect two sect-modal">
+                <div>
+                    <p class="p" id="p-one-r">Matriz de correlación de Spearman</p>
+                    <a class="modal_close" (click)="modal_s_opened=false">X</a>
+                </div>
+            </section>
+            <section class="sect two">
+                <div id="two-r" class="img-correlation">
+                    <div class="icon" id="spearman_img"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="modal-image" *ngIf="modal_k_opened">
+        <div class="body">
+            <section class="sect two sect-modal">
+                <div>
+                    <p class="p" id="p-one-r">Matriz de correlación de Kendall</p>
+                    <a class="modal_close" (click)="modal_k_opened=false">X</a>
+                </div>
+            </section>
+            <section class="sect two">
+                <div id="two-r" class="img-correlation">
+                    <div class="icon" id="kendall_img"></div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="modal-image" *ngIf="modal_p_opened">
+        <div class="body">
+            <section class="sect two sect-modal">
+                <div>
+                    <p class="p" id="p-one-r">Matriz de correlación de Pearson</p>
+                    <a class="modal_close" (click)="modal_p_opened=false">X</a>
+                </div>
+            </section>
+            <section class="sect two">
+                <div id="two-r" class="img-correlation">
+                    <div class="icon" id="pearson_img"></div>
+                </div>
+            </section>
+        </div>
+    </div>
 
 </article>
 

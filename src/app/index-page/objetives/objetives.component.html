@@ -27,36 +27,45 @@
 
     <section class="sect three">
         <div>
-            <p class="p" id="p-o-r">ETL</p>
+            <p class="p" id="p-o-r">Datos</p>
         </div>
         <div class="one three">
-            <div class="ot">
+            <div class="ot" (click)="load_modal()">
                 <div class="div-img">
                     <div class="st">
                         <div class="img icon middle" id="img_1"></div>
                     </div>
                 </div>
-                <p class="p">Extracción</p>
-            </div>
-            <div class="ot">
-                <div class="div-img">
-                    <div class="st">
-                        <div class="img icon middle" id="img_2"></div>
-                    </div>
-                </div>
-                <p class="p">Transformación</p>
-            </div>
-            <div class="ot">
-                <div class="div-img">
-                    <div class="st">
-                        <div class="img icon middle" id="img_3"></div>
-                    </div>
-                </div>
-                <p class="p">Carga</p>
+                <p class="p">Muestra del dataset</p>
             </div>
 
         </div>
         
     </section>
+
+    <div class="modal-image" *ngIf="open_modal">
+        <div class="body">
+            <section class="sect one sect-modal-title">
+                <div>
+                    <p class="p" id="modal-title">Ejecución de los modelos</p>
+                    <a class="modal_close" (click)="open_modal=false">X</a>
+                </div>
+            </section>
+            <section class="sect two sect-modal-content">
+                <div class="r" class="img-correlation">
+                    <p class="p four r p-modal-head" *ngFor="let atr of head_title">
+                        {{atr}}
+                    </p>
+                </div>
+                <div class="r" class="img-correlation">
+                    <div class="p four r" id="list-data" *ngFor="let atr of head_data">
+                        <p class="p four r p-modal-head" id="modal-val" *ngFor="let val of atr">
+                            {{val}}
+                        </p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
     
 </article>
