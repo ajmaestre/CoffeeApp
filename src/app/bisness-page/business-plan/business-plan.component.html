@@ -18,7 +18,7 @@
 
     <section class="sect three">
         <div class="one three">
-            <div class="ot">
+            <div class="ot" (click)="load_style_one()" [style]="card_one">
                 <div class="div-img">
                     <div class="st">
                         <p class="p">Etapa 1</p>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ot">
+            <div class="ot" (click)="load_style_two()" [style]="card_two">
                 <div class="div-img">
                     <div class="st">
                         <p class="p">Etapa 2</p>
@@ -50,7 +50,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ot">
+            <div class="ot" (click)="load_style_three()" [style]="card_three">
                 <div class="div-img">
                     <div class="st">
                         <p class="p">Etapa 3</p>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ot">
+            <div class="ot" (click)="load_style_four()" [style]="card_four">
                 <div class="div-img">
                     <div class="st">
                         <p class="p">Etapa 4</p>
@@ -81,7 +81,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ot">
+            <div class="ot" (click)="load_style_five()" [style]="card_five">
                 <div class="div-img">
                     <div class="st">
                         <p class="p">Etapa 5</p>
@@ -97,7 +97,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ot">
+            <div class="ot" (click)="load_style_six()" [style]="card_six">
                 <div class="div-img">
                     <div class="st">
                         <p class="p">Etapa 6</p>
@@ -112,7 +112,7 @@
                     </div>
                 </div>
             </div>
-            <div class="ot">
+            <div class="ot" (click)="load_style_seven()" [style]="card_seven">
                 <div class="div-img">
                     <div class="st">
                         <p class="p">Etapa 7</p>
@@ -131,7 +131,7 @@
         </div>
         
     </section>
-
-    <app-modal></app-modal>
+    
+    <div class="back" [style]="style_back"></div>
     
 </article>

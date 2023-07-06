@@ -172,6 +172,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_one()" id="grafica_20"></div>
+        </div>
+        <div id="two-r" (click)="load_style_one()" [style]="card_one">
             <div class="icon fig-4" id="grafica_20"></div>
         </div>
         <div class="r">
@@ -326,3 +329,5 @@
     </section>
 
 </article>
+
+<div class="back" [style]="style_back"></div>

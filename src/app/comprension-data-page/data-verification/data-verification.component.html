@@ -218,6 +218,9 @@
 
     <section class="sect two">
         <div class="two-r">
+            <div class="icon fig-4" (click)="load_style_one()" id="grafica_12"></div>
+        </div>
+        <div id="two-r" (click)="load_style_one()" [style]="card_one">
             <div class="icon fig-4" id="grafica_12"></div>
         </div>
         <div class="r">
@@ -358,6 +361,9 @@
 
     <section class="sect two">
         <div class="two-r">
+            <div class="icon fig-4" (click)="load_style_two()" id="grafica_13"></div>
+        </div>
+        <div id="two-r" (click)="load_style_two()" [style]="card_two">
             <div class="icon fig-4" id="grafica_13"></div>
         </div>
         <div class="r">
@@ -390,6 +396,9 @@
 
     <section class="sect two">
         <div class="two-r">
+            <div class="icon fig-4" (click)="load_style_three()" id="grafica_14"></div>
+        </div>
+        <div id="two-r" (click)="load_style_three()" [style]="card_three">
             <div class="icon fig-4" id="grafica_14"></div>
         </div>
         <div class="r">
@@ -431,6 +440,9 @@
     <section class="sect two" id="percentaje">
         <div class="div-img">
             <div class="two-r">
+                <div class="icon fig-4 img-caja" (click)="load_style_four()" id="grafica_16"></div>
+            </div>
+            <div id="two-r" (click)="load_style_four()" [style]="card_four">
                 <div class="icon fig-4 img-caja" id="grafica_16"></div>
             </div>
             <div class="r">
@@ -441,6 +453,9 @@
         </div>
         <div class="div-img">
             <div class="two-r">
+                <div class="icon fig-4 img-caja" (click)="load_style_five()" id="grafica_15"></div>
+            </div>
+            <div id="two-r" (click)="load_style_five()" [style]="card_five">
                 <div class="icon fig-4 img-caja" id="grafica_15"></div>
             </div>
             <div class="r">
@@ -452,3 +467,5 @@
     </section>
 
 </article>
+
+<div class="back" [style]="style_back"></div>

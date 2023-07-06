@@ -10,7 +10,7 @@
     <section class="sect two">
         <div id="two-r">
             <app-logo class="icon middle"></app-logo>
-            <p class="p three r">¿Para qué?</p>
+            <p class="p three r" id="p-one">¿Para qué?</p>
         </div>
         <div class="r">
             <p class="p four r" id="p-four-r">
@@ -26,7 +26,7 @@
     </section>
 
     <section class="sect three">
-        <div>
+        <div id="div-title">
             <p class="p" id="p-o-r">Datos</p>
         </div>
         <div class="one three">
@@ -47,11 +47,17 @@
         <div class="body">
             <section class="sect one sect-modal-title">
                 <div>
-                    <p class="p" id="modal-title">Ejecución de los modelos</p>
+                    <p class="p" id="modal-title">Dataset</p>
                     <a class="modal_close" (click)="open_modal=false">X</a>
                 </div>
             </section>
             <section class="sect two sect-modal-content">
+                <div class="div-load" *ngIf="loading">
+                    <div class="loading">
+                        <div class="fondo"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
                 <div class="r" class="img-correlation">
                     <p class="p four r p-modal-head" *ngFor="let atr of head_title">
                         {{atr}}

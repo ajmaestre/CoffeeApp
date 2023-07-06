@@ -24,24 +24,16 @@ export class BusinessEstateComponent implements OnInit {
         de estratificación de los cultivos en el departamento del Huila por medio 
         de la metodología CRISP-DM, con el desarrollo de las siguientes etapas:`,
 
-      `-  Compresión del negocio: en esta es la etapa realizaron la comprensión del problema, 
-        explicaron cómo se realizaba la planificación de las áreas a ser sembradas en 
-        cada municipio de acuerdo a sus necesidades.
+      `-  Compresión del negocio.
       `,
 
-      `-  Compresión de datos: en esta etapa se enfocaron en entender los datos para 
-        identificar las variables de interés y las posibles inconsistencias en la 
-        construcción del modelo.`,
+      `-  Compresión de datos.`,
 
-      `-  Preparación de los datos: en esta etapa seleccionaron los datos que se 
-        transformarían mediante la calidad y completitud de los datos, según la 
-        descripción de cada atributo.`,
+      `-  Preparación de los datos.`,
 
-      `-  Modelado: En esta etapa obtuvieron el modelo de minería de datos 
-        parametrizando el algoritmo mediante las técnicas no supervisadas de la minería de datos.`,
+      `-  Modelado.`,
 
-      `-  Evaluación: En esta etapa determinaron la calidad del modelo evaluándolo con la 
-        curva característica de recepción (ROC).`,
+      `-  Evaluación.`,
 
       `El diseño de patrones para la estratificación de cultivos 
         por medio del uso de la metodología CRISP-DM, les permitió realizar 

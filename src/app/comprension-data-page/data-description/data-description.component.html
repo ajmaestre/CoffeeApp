@@ -31,6 +31,12 @@
                 17 atributos, pero al extraer solo los registros relacionados 
                 con los cultivos de café obtenemos solo 7263 instancias con los 
                 mismos 17 atributos, los cuales están descritos de la siguiente manera:
+                El conjunto de datos está formado por 7 atributos de tipo numérico, 
+                dentro de los cuales hay 6 enteros y uno de tipo flotante, 
+                como también 10 atributos de tipo texto, como podemos visualizar en la información anterior. 
+                La variable objetivo, es decir aquella que nos interesará predecir, 
+                es el rendimiento, que es medida o calculada de acuerdo al número de 
+                toneladas producidas entre el número de hectáreas cosechadas.
             </p>
         </div>
     </section>
@@ -44,7 +50,7 @@
                     </div>
                 </div>
                 <p class="p">
-                    Tipo numérico. Código del departamento, según lo establecido por el DANE. 
+                    Tipo numérico. Código del departamento. 
                 </p>
             </div>
             <div class="ot">
@@ -64,7 +70,7 @@
                     </div>
                 </div>
                 <p class="p">
-                    Tipo numérico. Código del municipio, según lo establecido por el DANE.
+                    Tipo numérico. Código del municipio.
                 </p>
             </div>
 
@@ -99,7 +105,7 @@
             <div class="ot">
                 <div class="div-img">
                     <div class="st">
-                        <p class="p">Desagregación regional y/o sistema productivo</p>
+                        <p class="p">Desagregación regional</p>
                     </div>
                 </div>
                 <p class="p">
@@ -168,15 +174,6 @@
                     Tipo numérico. Área sembrada en hectáreas.
                 </p>
             </div>
-
-        </div>
-    </section>
-
-    <hr>
-
-    <section class="sect three" data-aos="fade-left" >
-        <div class="one three">
-
             <div class="ot">
                 <div class="div-img">
                     <div class="st">
@@ -228,24 +225,10 @@
                     Tipo texto. Ciclo del cultivo en el país.
                 </p>
             </div>
-            
+
         </div>
     </section>
 
-    
-    <section class="sect two" data-aos="fade-left" >
-        <div class="r">
-            <p class="p four r" id="p-four-r">
-                El conjunto de datos está formado por 7 atributos de tipo numérico, 
-                dentro de los cuales hay 6 enteros y uno de tipo flotante, 
-                como también 10 atributos de tipo texto, como podemos visualizar en la información anterior. 
-                La variable objetivo, es decir aquella que nos interesará predecir, 
-                es el rendimiento, que es medida o calculada de acuerdo al número de 
-                toneladas producidas entre el número de hectáreas cosechadas.
-            </p>
-        </div>
-    </section>
-    
 </article>
 
 <hr>
@@ -285,7 +268,12 @@
     </section>
 
     <section class="sect two">
-        
+        <div class="div-load" *ngIf="loading">
+            <div class="loading">
+                <div class="fondo"></div>
+                <div class="circle"></div>
+            </div>
+        </div>
         <div id="two-r">
             <div id="table">
                 <p class="col-name">Atributo</p>
@@ -390,7 +378,10 @@
     </section>
 
     <section class="sect two">
-        <div id="two-r">
+        <div id="two-r" (click)="load_style_one()">
+            <div class="icon fig-4" id="grafica_1"></div>
+        </div>
+        <div id="two-r" (click)="load_style_one()" [style]="card_one">
             <div class="icon fig-4" id="grafica_1"></div>
         </div>
         <div class="r">
@@ -432,7 +423,10 @@
     </section>
 
     <section class="sect two">
-        <div id="two-r">
+        <div id="two-r" (click)="load_style_two()" >
+            <div class="icon fig-4" id="grafica_2"></div>
+        </div>
+        <div id="two-r" (click)="load_style_two()" [style]="card_two">
             <div class="icon fig-4" id="grafica_2"></div>
         </div>
         <div class="r">
@@ -471,7 +465,10 @@
     </section>
 
     <section class="sect two">
-        <div id="two-r">
+        <div id="two-r" >
+            <div class="icon fig-4" (click)="load_style_three()" id="grafica_3"></div>
+        </div>
+        <div id="two-r" (click)="load_style_three()" [style]="card_three">
             <div class="icon fig-4" id="grafica_3"></div>
         </div>
         <div class="r">
@@ -510,6 +507,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_four()" id="grafica_4"></div>
+        </div>
+        <div id="two-r" (click)="load_style_four()" [style]="card_four">
             <div class="icon fig-4" id="grafica_4"></div>
         </div>
         <div class="r">
@@ -520,3 +520,6 @@
     </section>
     
 </article>
+
+<div class="back" [style]="style_back"></div>
+

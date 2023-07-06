@@ -49,6 +49,11 @@ article .one div{
     flex: 30;
     padding: 0.5rem 0;
     font-size: .9rem;
+    color: var(--bg-footer);
+}
+
+#p-one{
+    color: var(--bg-footer);
 }
 
 .sect.two{
@@ -86,6 +91,8 @@ article .one div{
     padding-left: 3px;
     margin: 0;
     flex: 30;
+    color: white;
+    background: transparent;
 }
 
 .ot{
@@ -156,12 +163,19 @@ article .one div{
 
 .sect.three{
     padding: 1rem;
+    background: url(../../../assets/images/tendencias.jpg);
+    background-size: cover;
 }
 
 .one.three{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+}
+
+#div-title{
+    background: transparent;
 }
 
 .modal-image{
@@ -212,6 +226,10 @@ article .one div{
 .sect-modal-content{
     width: auto;
     height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
 }
 
 .p-modal-head{
@@ -245,4 +263,41 @@ article .one div{
     align-items: center;
     justify-content: center;
     color: black;
+}
+
+.loading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+    padding: .5rem;
+    width: 6rem;
+    border-radius: 80%;
+}
+
+.fondo{
+    position: absolute;
+    width: 10rem;
+    left: -60%;
+    animation: load 1s ease-in-out infinite;
+    border: 1rem solid var(--bg-footer);
+}
+
+.circle{
+    width: 4rem;
+    height: 4rem;
+    border-radius: 50%;
+    border: .2rem solid var(--bg-footer);
+    z-index: 2;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes load {
+    100%{
+        transform: rotate(360deg);
+    }
 }

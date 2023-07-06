@@ -91,6 +91,8 @@ article .one div{
     padding-left: 3px;
     margin: 0;
     flex: 30;
+    background: transparent;
+    color: white;
 }
 
 .ot{
@@ -103,8 +105,6 @@ article .one div{
     margin: 10px;
     border: 1px solid #dfdfdf;
     border-radius: 8px;
-    background-size: 100% 30%;
-    background-repeat: no-repeat;
     cursor: pointer;
     transition: 1s;
 }
@@ -121,7 +121,6 @@ article .one div{
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: transparent;
 }
 
 .st{
@@ -145,11 +144,22 @@ article .one div{
 }
 
 #img_2{
-    background: url(../../../assets/images/transform.png);
+    width: 3rem;
+    height: 3rem;
+    background: url(../../../assets/images/extract.png);
     background-size: cover;
 }
 
 #img_3{
+    width: 3rem;
+    height: 3rem;
+    background: url(../../../assets/images/transform.png);
+    background-size: cover;
+}
+
+#img_4{
+    width: 3rem;
+    height: 3rem;
     background: url(../../../assets/images/load.png);
     background-size: cover;
 }
@@ -161,10 +171,77 @@ article .one div{
 
 .sect.three{
     padding: 1rem;
+    background: url(../../../assets/images/stock.jpg);
+    background-size: cover;
 }
 
 .one.three{
     display: flex;
     align-items: center;
     justify-content: center;
+    background: transparent;
+}
+
+.three .div-title{
+    background: transparent;
+}
+
+.modal-image{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(10, 10, 10, 0.4);
+    z-index: 4;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.body{
+    animation: show-modal 1s ease normal;
+}
+
+.modal_close{
+    text-decoration: none;
+    font-weight: bold;
+    color: var(--bg-footer);
+    cursor: pointer;
+    transition: 1s;
+}
+
+.modal_close:hover{
+    transform: scale(1.1);
+    color: black;
+}
+
+.img-correlation{
+    width: auto;
+    height: auto;
+    padding-bottom: 0;
+}
+
+.img-correlation a{
+    text-decoration: none;
+    color: var(--bg-footer);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.img-correlation a:hover{
+    transform: scale(1.1);
+    color: var(--bg-foot);
+}
+
+.sect-modal-title{
+    width: 50rem;
+    height: 3rem;
+}
+
+.sect-modal-content{
+    width: 50rem;
+    height: 15rem;
 }

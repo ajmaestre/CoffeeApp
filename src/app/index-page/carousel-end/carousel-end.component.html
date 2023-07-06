@@ -1,32 +1,33 @@
-
 <article class="article right" data-aos="fade-left">
 
     <section class="sect two">
-    
-    <div class="cards">
-        <div class="center">
 
-            <div class="card">
-                <div class="img">
-                    <app-www class="svg"></app-www>
+        <div class="cards">
+            <div class="center">
+
+                <div class="card" (click)="load_modal(modal_one)">
+                    <div class="img">
+                        <app-www class="svg"></app-www>
+                    </div>
+                    <div class="info">
+                        <p class="title sub-title">Modelado</p>
+                    </div>
                 </div>
-                <div class="info">
-                    <p class="title sub-title">Modelado</p>
+
+                <div class="card" (click)="load_modal(modal_two)">
+                    <div class="img">
+                        <app-fixed class="svg"></app-fixed>
+                    </div>
+                    <div class="info">
+                        <p class="title sub-title">Evaluación</p>
+                    </div>
                 </div>
+
             </div>
-
-            <div class="card">
-                <div class="img">
-                    <app-fixed class="svg"></app-fixed>
-                </div>
-                <div class="info">
-                    <p class="title sub-title">Evaluación</p>
-                </div>
-            </div>
-
         </div>
-    </div>
 
     </section>
-    
+
+    <app-modal></app-modal>
+
 </article>

@@ -1,5 +1,4 @@
-
-<article class="article right"  data-aos="fade-left" >
+<article class="article right" data-aos="fade-left">
 
     <section class="sect one">
         <div>
@@ -14,49 +13,75 @@
         </div>
         <div class="r">
             <p class="p four r" id="p-four-r">
-                En la era actual, debido al incremento exponencial de información, ha surgido la necesidad de 
-                procesarla, cualificarla y cuantificarla. En el sector agrícola esto no es una excepción; con el 
-                crecimiento de la tecnología, la recolección de datos de los diferentes cultivos que se plantan y 
-                cosechan en cierta área se ha facilitado, lo que nos brinda una oportunidad de tratar esta nueva 
-                cantidad de información y extraer todo aquello que podría sernos útil para futuras referencias. De 
-                esta necesidad nace el objetivo de diseñar un modelo de predicción de rendimiento para los 
-                cultivos en Colombia, utilizando todas las herramientas que nos brinda la minería de datos. 
+                En la era actual, debido al incremento exponencial de información, ha surgido la necesidad de
+                procesarla, cualificarla y cuantificarla. En el sector agrícola esto no es una excepción; con el
+                crecimiento de la tecnología, la recolección de datos de los diferentes cultivos que se plantan y
+                cosechan en cierta área se ha facilitado, lo que nos brinda una oportunidad de tratar esta nueva
+                cantidad de información y extraer todo aquello que podría sernos útil para futuras referencias. De
+                esta necesidad nace el objetivo de diseñar un modelo de predicción de rendimiento para los
+                cultivos en Colombia, utilizando todas las herramientas que nos brinda la minería de datos.
             </p>
         </div>
     </section>
 
-    <section class="sect three">
-        <div>
-            <p class="p" id="p-o-r">ETL</p>
+    <section class="sect three" id="div_img">
+        <div class="div-title">
+            <p class="p" id="p-o-r">Metodología</p>
         </div>
         <div class="one three">
-            <div class="ot">
+            <div class="ot" (click)="load_modal()">
                 <div class="div-img">
                     <div class="st">
                         <div class="img icon middle" id="img_1"></div>
                     </div>
                 </div>
-                <p class="p">Extracción</p>
+                <p class="p">CRISP-DM</p>
             </div>
-            <div class="ot">
-                <div class="div-img">
-                    <div class="st">
-                        <div class="img icon middle" id="img_2"></div>
-                    </div>
-                </div>
-                <p class="p">Transformación</p>
-            </div>
-            <div class="ot">
-                <div class="div-img">
-                    <div class="st">
-                        <div class="img icon middle" id="img_3"></div>
-                    </div>
-                </div>
-                <p class="p">Carga</p>
-            </div>
-
         </div>
-        
     </section>
-    
+
+    <div class="modal-image" *ngIf="open_modal">
+        <div class="body">
+            <section class="sect two sect-modal-title">
+                <div>
+                    <p class="p" id="p-one-r">CRISP-DM</p>
+                    <a class="modal_close" (click)="open_modal=false">X</a>
+                </div>
+            </section>
+            <section class="sect two sect-modal-content">
+                <div id="two-r" class="img-correlation">
+                    <div class="icon" id="img_2"></div>
+                    <div class="icon" id="img_3"></div>
+                    <div class="icon" id="img_4"></div>
+                </div>
+                <div class="r" class="img-correlation">
+                    <p class="p four r" id="p-fig-4">
+                        La metodología CRISP-DM es una de las más empleadas 
+                        actualmente para el desarrollo de proyectos
+                        de minería de datos. En 1997, se puso en marcha bajo el
+                        financiamiento del Programa de Investigación y Desarrollo 
+                        en Tecnologías de Información de la
+                        Unión Europea (ESPRIT) y se dirigió inicialmente por cinco
+                        empresas: SPSS (empresa enfocada a software estadístico que 
+                        posteriormente sería adquirida por
+                        IBM), Teradata (empresa encargada a Inteligencia de Negocios),
+                        Daimler AG (empresa automotriz que contaba con un
+                        equipo de Minería de Datos relevante), NCR (una de las
+                        mayores empresas en informática en aquel entonces
+                        que posteriormente produjo su propio software de Minería de Datos) 
+                        y Ohra (compañía aseguradora que en
+                        aquellos años empezaba a explorar el uso potencial de
+                        la minería de datos). La primera versión de la metodología 
+                        se presentó en Bruselas en 1999 y se publicó ese
+                        mismo año como una guía paso a paso de minería de
+                        datos (Gallardo, 2018).
+                    </p>
+                </div>
+                <div class="r" class="img-correlation">
+                    <a href="https://doi.org/10.22201/fi.25940732e.2020.21n1.008" target="_blank">Fuente</a>
+                </div>
+            </section>
+        </div>
+    </div>
+
 </article>

@@ -217,7 +217,10 @@
     </section>
 
     <section class="sect two">
-        <div id="two-r">
+        <div id="two-r" (click)="load_style_one()">
+            <div class="icon fig-4" id="grafica_5"></div>
+        </div>
+        <div id="two-r" (click)="load_style_one()" [style]="card_one">
             <div class="icon fig-4" id="grafica_5"></div>
         </div>
         <div class="r">
@@ -256,7 +259,10 @@
     </section>
 
     <section class="sect two">
-        <div id="two-r">
+        <div id="two-r" (click)="load_style_two()">
+            <div class="icon fig-4" id="grafica_6"></div>
+        </div>
+        <div id="two-r" (click)="load_style_two()" [style]="card_two">
             <div class="icon fig-4" id="grafica_6"></div>
         </div>
         <div class="r">
@@ -296,6 +302,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_three()" id="grafica_7"></div>
+        </div>
+        <div id="two-r" (click)="load_style_three()" [style]="card_three">
             <div class="icon fig-4" id="grafica_7"></div>
         </div>
         <div class="r">
@@ -335,6 +344,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_four()" id="grafica_8"></div>
+        </div>
+        <div id="two-r" (click)="load_style_four()" [style]="card_four">
             <div class="icon fig-4" id="grafica_8"></div>
         </div>
         <div class="r">
@@ -372,6 +384,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_five()" id="grafica_9"></div>
+        </div>
+        <div id="two-r" (click)="load_style_five()" [style]="card_five">
             <div class="icon fig-4" id="grafica_9"></div>
         </div>
         <div class="r">
@@ -411,6 +426,9 @@
     <section class="sect two" id="percentaje">
         <div class="div-img">
             <div id="two-r">
+                <div class="icon fig-4 img-percentaje" (click)="load_style_six()" id="grafica_10"></div>
+            </div>
+            <div id="two-r" (click)="load_style_six()" [style]="card_six">
                 <div class="icon fig-4 img-percentaje" id="grafica_10"></div>
             </div>
             <div class="r">
@@ -421,6 +439,9 @@
         </div>
         <div class="div-img">
             <div id="two-r">
+                <div class="icon fig-4 img-percentaje" (click)="load_style_seven()" id="grafica_11"></div>
+            </div>
+            <div id="two-r" (click)="load_style_seven()" [style]="card_seven">
                 <div class="icon fig-4 img-percentaje" id="grafica_11"></div>
             </div>
             <div class="r">
@@ -432,3 +453,5 @@
     </section>
 
 </article>
+
+<div class="back" [style]="style_back"></div>

@@ -1,10 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { modal_type } from 'src/app/interfaces/modalType';
 
-
-interface modal_type{
-  title?: string;
-  content?: string[];
-}
 
 @Component({
   selector: 'app-generation-comprobation-page',
@@ -80,7 +76,10 @@ export class GenerationComprobationPageComponent implements OnInit {
   }
 
   open_modal: boolean = false;
-  modal_select: modal_type = {};
+  modal_select: modal_type = {
+    title: '',
+    content: []
+  };
 
   constructor() { }
 

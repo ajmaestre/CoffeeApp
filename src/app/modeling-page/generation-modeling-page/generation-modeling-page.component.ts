@@ -26,9 +26,9 @@ export class GenerationModelingPageComponent implements OnInit {
 
   load_modal_desc(){
     if(this.open_modal_desc){
-      this.open_modal_eject = false;
+      this.open_modal_desc = false;
     }else{
-      this.open_modal_eject = true;
+      this.open_modal_desc = true;
     }
   }
 

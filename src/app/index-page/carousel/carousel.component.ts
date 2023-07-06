@@ -1,11 +1,7 @@
 import { Component, OnInit } from '@angular/core';
+import { modal_type } from 'src/app/interfaces/modalType';
 import { ModalService } from 'src/app/modal/modal.service';
 
-
-interface modal_type{
-  title: string;
-  content: string[];
-}
 
 @Component({
   selector: 'app-carousel',

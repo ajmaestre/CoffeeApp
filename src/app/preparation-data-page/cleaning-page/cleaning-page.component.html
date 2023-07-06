@@ -112,6 +112,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_one()" id="grafica_16"></div>
+        </div>
+        <div id="two-r" (click)="load_style_one()" [style]="card_one">
             <div class="icon fig-4" id="grafica_16"></div>
         </div>
         <div class="r">
@@ -234,6 +237,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_two()" id="grafica_17"></div>
+        </div>
+        <div id="two-r" (click)="load_style_two()" [style]="card_two">
             <div class="icon fig-4" id="grafica_17"></div>
         </div>
         <div class="r">
@@ -273,6 +279,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_three()" id="grafica_18"></div>
+        </div>
+        <div id="two-r" (click)="load_style_three()" [style]="card_three">
             <div class="icon fig-4" id="grafica_18"></div>
         </div>
         <div class="r">
@@ -312,6 +321,9 @@
 
     <section class="sect two">
         <div id="two-r">
+            <div class="icon fig-4" (click)="load_style_four()" id="grafica_19"></div>
+        </div>
+        <div id="two-r" (click)="load_style_four()" [style]="card_four">
             <div class="icon fig-4" id="grafica_19"></div>
         </div>
         <div class="r">
@@ -322,3 +334,5 @@
     </section>
     
 </article>
+
+<div class="back" [style]="style_back"></div>

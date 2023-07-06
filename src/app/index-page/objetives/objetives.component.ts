@@ -15,6 +15,7 @@ export class ObjetivesComponent implements OnInit, OnDestroy {
   head: any[] = [];
   head_title: any[] = [];
   head_data: any[]= [];
+  loading: boolean = true;
 
   constructor(private indexService: IndexPageService) { }
 
@@ -35,6 +36,7 @@ export class ObjetivesComponent implements OnInit, OnDestroy {
           }
           this.head_data.push(this.head);
         }
+        this.loading = false;
       },
       error: (err) => {
         console.log(err);
