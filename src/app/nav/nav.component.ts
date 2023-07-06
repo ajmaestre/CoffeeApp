@@ -9,9 +9,8 @@ import { Event, NavigationEnd, Router} from '@angular/router';
 export class NavComponent implements OnInit {
 
   style_route = {
-    'border-bottom': '.15rem solid #43017d',
-    'padding': '.2rem 0',
-    'transition': '1s'
+    'border-bottom': '.1rem solid #43017d',
+    'padding': '.5rem 0',
   };
   route_one = {};
   route_two = {};
@@ -21,6 +20,12 @@ export class NavComponent implements OnInit {
   route_six = {};
 
   constructor(private router: Router) {
+    this.route_one = this.style_route;
+    this.route_two = {};
+    this.route_three = {};
+    this.route_four = {};
+    this.route_five = {};
+    this.route_six = {};
     this.router.events.subscribe((event: Event) => {
 
         if (event instanceof NavigationEnd) {
