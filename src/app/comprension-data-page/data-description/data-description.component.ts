@@ -23,6 +23,10 @@ export class DataDescriptionComponent implements OnInit, OnDestroy {
 
   resumeSubscription!: Subscription;
   numAtr: numberAtributes = {};
+  head: any[] = [];
+  head_key: any[] = [];
+  head_title: any[] = [];
+  head_data: any[]= [];
   loading: boolean = true;
   card_one: style = { 'display': 'none' };
   card_two: style = { 'display': 'none' };
@@ -58,7 +62,21 @@ export class DataDescriptionComponent implements OnInit, OnDestroy {
   getResumeStatistic(){
     this.resumeSubscription = this.comprensionService.getResumeStatistic().subscribe({
       next: (res) => {
-        this.numAtr = res;
+        // this.numAtr = res;
+        // this.loading = false;
+        this.head_data = [];
+        this.head_title = [];
+        for(let key in res){
+          let value = res[key];
+          this.head_title.push(key);
+          this.head = [];
+          this.head_key = [];
+          for(let val in value){
+            this.head_key.push(val);
+            this.head.push(value[val]);
+          }
+          this.head_data.push(this.head);
+        }
         this.loading = false;
       },
       error: (err) => {

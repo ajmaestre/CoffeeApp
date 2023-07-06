@@ -274,68 +274,92 @@
                 <div class="circle"></div>
             </div>
         </div>
-        <div id="two-r">
-            <div id="table">
-                <p class="col-name">Atributo</p>
+        <div *ngIf="!loading" class="div-load">
+            <!-- <div id="two-r">
+                <div id="table">
+                    <p class="col-name">Atributo</p>
+                </div>
+                <div id="table" *ngFor="let atr of numAtr.c_d_dep | keyvalue">
+                    <p class="col-name">{{atr.key}}</p>
+                </div>
             </div>
-            <div id="table" *ngFor="let atr of numAtr.c_d_dep | keyvalue">
-                <p class="col-name">{{atr.key}}</p>
+            <div id="two-r">
+                <div id="table">
+                    <p class="col-name">Código dept.</p>
+                </div>
+                <div id="table" *ngFor="let atr of numAtr.c_d_dep | keyvalue">
+                    <p class="col-name">{{atr.value}}</p>
+                </div>
             </div>
-        </div>
-        <div id="two-r">
-            <div id="table">
-                <p class="col-name">Código dept.</p>
+            <div id="two-r">
+                <div id="table">
+                    <p class="col-name">Código mun.</p>
+                </div>
+                <div id="table" *ngFor="let atr of numAtr.c_d_mun | keyvalue">
+                    <p class="col-name">{{atr.value}}</p>
+                </div>
             </div>
-            <div id="table" *ngFor="let atr of numAtr.c_d_dep | keyvalue">
-                <p class="col-name">{{atr.value}}</p>
+            <div id="two-r">
+                <div id="table">
+                    <p class="col-name">Año</p>
+                </div>
+                <div id="table" *ngFor="let atr of numAtr.a_o | keyvalue">
+                    <p class="col-name">{{atr.value}}</p>
+                </div>
             </div>
-        </div>
-        <div id="two-r">
-            <div id="table">
-                <p class="col-name">Código mun.</p>
+            <div id="two-r">
+                <div id="table">
+                    <p class="col-name">Area semb.</p>
+                </div>
+                <div id="table" *ngFor="let atr of numAtr.rea_sembrada_ha | keyvalue">
+                    <p class="col-name">{{atr.value}}</p>
+                </div>
             </div>
-            <div id="table" *ngFor="let atr of numAtr.c_d_mun | keyvalue">
-                <p class="col-name">{{atr.value}}</p>
+            <div id="two-r">
+                <div id="table">
+                    <p class="col-name">Area cose.</p>
+                </div>
+                <div id="table" *ngFor="let atr of numAtr.rea_cosechada_ha | keyvalue">
+                    <p class="col-name">{{atr.value}}</p>
+                </div>
             </div>
-        </div>
-        <div id="two-r">
-            <div id="table">
-                <p class="col-name">Año</p>
+            <div id="two-r">
+                <div id="table">
+                    <p class="col-name">Producción</p>
+                </div>
+                <div id="table" *ngFor="let atr of numAtr.producci_n_t | keyvalue">
+                    <p class="col-name">{{atr.value}}</p>
+                </div>
             </div>
-            <div id="table" *ngFor="let atr of numAtr.a_o | keyvalue">
-                <p class="col-name">{{atr.value}}</p>
+            <div id="two-r">
+                <div id="table">
+                    <p class="col-name">Rendimiento</p>
+                </div>
+                <div id="table" *ngFor="let atr of numAtr.rendimiento_t_ha | keyvalue">
+                    <p class="col-name">{{atr.value}}</p>
+                </div>
+            </div> -->
+            <div class="r img-correlation">
+                <div class="r row">
+                    <p class="p four r p-modal-head">
+                        Métr. / Atrib.
+                    </p>
+                </div>
+                <p class="p four r p-modal-head" *ngFor="let atr of head_title">
+                    {{atr}}
+                </p>
             </div>
-        </div>
-        <div id="two-r">
-            <div id="table">
-                <p class="col-name">Area semb.</p>
-            </div>
-            <div id="table" *ngFor="let atr of numAtr.rea_sembrada_ha | keyvalue">
-                <p class="col-name">{{atr.value}}</p>
-            </div>
-        </div>
-        <div id="two-r">
-            <div id="table">
-                <p class="col-name">Area cose.</p>
-            </div>
-            <div id="table" *ngFor="let atr of numAtr.rea_cosechada_ha | keyvalue">
-                <p class="col-name">{{atr.value}}</p>
-            </div>
-        </div>
-        <div id="two-r">
-            <div id="table">
-                <p class="col-name">Producción</p>
-            </div>
-            <div id="table" *ngFor="let atr of numAtr.producci_n_t | keyvalue">
-                <p class="col-name">{{atr.value}}</p>
-            </div>
-        </div>
-        <div id="two-r">
-            <div id="table">
-                <p class="col-name">Rendimiento</p>
-            </div>
-            <div id="table" *ngFor="let atr of numAtr.rendimiento_t_ha | keyvalue">
-                <p class="col-name">{{atr.value}}</p>
+            <div class="r img-correlation">
+                <div class="r row row-h">
+                    <p class="p four r p-modal-head" *ngFor="let atr of head_key">
+                        {{atr}}
+                    </p>
+                </div>
+                <div class="p four r" id="list-data" *ngFor="let atr of head_data">
+                    <p class="p four r p-modal-head" id="modal-val" *ngFor="let val of atr">
+                        {{val}}
+                    </p>
+                </div>
             </div>
         </div>
         <div class="r" id="legend">
